@@ -1,0 +1,56 @@
+/* Cards */
+#card {
+  background: var(--main-dark);
+  width: 30vh;
+  height: 450px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: var(--main-white);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;  
+  transition-property: box-shadow 1s;
+  transition-duration: 0.5s;
+}
+#card:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+#card img {
+  width: 100%;
+  height: 300px;
+  object-fit: fill;
+}
+.origin {
+  margin-top: 0px;
+  font-size: smaller;
+  color: #CCCCCC;
+}
+.project-title {
+  padding-top: 6px;
+  color: var(--accent-color);
+}
+.content {
+  min-height: 100px;
+  max-height: 100px;
+  width: 100%;
+  margin: 0px;
+}
+.badges {
+  min-height: 40px;
+  max-height: 40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding: 5px;
+}
+.invert {
+  filter: invert();
+}
+.badge {
+  display: block;
+  max-width: 40px;
+  max-height: 40px;
+  fill: #EEE;
+}

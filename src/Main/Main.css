@@ -1,0 +1,88 @@
+
+/* Section */
+section {
+    min-height: 100vh;
+    width: 100%;
+  }
+  
+  /* About Section */
+  #about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;    
+    background: linear-gradient(30deg, rgba(34,40,49,1) 25%, rgba(57,62,70,1) 100%);
+  }
+  #about h1 {
+    font-size: 6rem;
+    color: var(--accent-color)
+  }
+  #about p {
+    font-size: 3rem;
+    color: var(--main-white);
+  }
+  
+  /* Projects Section */
+  #projects {
+    padding-top: 50px;
+    align-items: center;
+    text-align: center;
+    background-color: var(--alternative-accent);
+  }
+  #projects h2 {
+    font-size: 2.5rem;
+    color: var(--main-white);
+    margin-top: 50px;
+  }
+  #card-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    margin-top: 25px;
+    width: 90%;
+  }
+  
+  /* Contact */
+  #contact {
+    background: var(--main-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;    
+    flex-direction: column;
+  }
+  #contact h1 {
+    font-size: 4rem;
+    color: var(--accent-color)
+  }
+  #contact p {
+    font-size: 2rem;
+    color: var(--main-white);
+  }
+  .contact-info {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .contact-card {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    padding: 15px;
+    margin: 0px 5px 0px 5px;
+    font-size: 2rem;
+    color: var(--main-white);
+    transition: color 0.5s, background-color 0.5s, border-radius 0.5s, box-shadow 0.5s;
+  }
+  .contact-card img {
+    margin-right: 5px;
+  }
+  .contact-card:hover {
+    color: var(--accent-color);
+    background-color: var(--alternative-accent);
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }

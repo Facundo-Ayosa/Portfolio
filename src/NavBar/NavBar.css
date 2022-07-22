@@ -1,0 +1,37 @@
+/* mini fixes */
+.no-margin {
+  margin: 0px;
+}
+
+/* NAVBAR */
+nav {
+  position: fixed;
+  width: 100%;
+  background-color: var(--accent-color);
+  display: flex;
+  justify-content: flex-end;
+}
+nav ul {
+  margin: 0px;
+  padding: 0px;
+  margin-right: 10px;
+  display: inline-flex; 
+}
+.nav-link a {
+  text-decoration: none;
+  color: var(--main-dark);
+  padding: 15px;
+}
+.nav-link:hover {
+  background-color: var(--darker-dark);
+  color: var(--accent-color);
+}
+.nav-link {
+  list-style-type: none;
+  color: var(--darker-dark);
+  text-shadow: 0 0 3px var(--accent-color);
+  padding: 15px 0px 15px 0px;
+}
+.nav-link:hover a {
+  color: var(--accent-color);
+}
