@@ -5,14 +5,14 @@ import './Card.css'
 
 function Card(props) {
     const badge = {
-        html: "../resources/icons/html.svg",
-        css: "../resources/icons/css.svg",
-        htmltable: "../resources/icons/html-table.svg"
+        html: "resources/icons/html.svg",
+        css: "resources/icons/css.svg",
+        htmltable: "resources/icons/html-table.svg"
     }
     const portfolio = {
-        balancesheet: "../resources/images/balancesheet.png",
-        jsdocumentation: "../resources/images/jsdocumentation.png",
-        productlandingpage: "../resources/images/productlandingpage.png"
+        balancesheet: "/resources/images/balancesheet.png",
+        jsdocumentation: "/resources/images/jsdocumentation.png",
+        productlandingpage: "/resources/images/productlandingpage.png"
     }
     let badgelist = props.badges.map((src) => {
         return <img src={badge[src]} className="badge"/>
