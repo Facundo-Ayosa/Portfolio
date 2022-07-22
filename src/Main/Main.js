@@ -22,19 +22,19 @@ function Main() {
                 <p className="no-margin">Care for a coffee?</p>
                     <div className="contact-info">
                         <a className="contact-card" href="https://www.linkedin.com/in/ayosafacundo/" target="_blank">
-                            <img className="invert" src="/resources/icons/linkedin.svg" alt="LinkedIn icon"/>
+                            <img className="invert" src="resources/icons/linkedin.svg" alt="LinkedIn icon"/>
                             LinkedIn
                         </a>
                         <a className="contact-card" href="https://github.com/Facundo-Ayosa" target="_blank">
-                            <img className="invert" src="/resources/icons/github.svg" alt="Github icon"/>
+                            <img className="invert" src="resources/icons/github.svg" alt="Github icon"/>
                             Github
                         </a>
                         <a className="contact-card">
-                            <img className="invert" src="/resources/icons/email.svg" alt="Email icon"/>
+                            <img className="invert" src="resources/icons/email.svg" alt="Email icon"/>
                             Email
                         </a>
                         <a className="contact-card">
-                            <img className="invert" src="/resources/icons/contact.svg" alt="Contact icon"/>
+                            <img className="invert" src="resources/icons/contact.svg" alt="Contact icon"/>
                             Phone
                         </a>
                     </div>
