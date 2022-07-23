@@ -10,7 +10,7 @@ function Main() {
                 </div>
                 </section>
                 <section id="projects">
-                    <h2 className="no-margin">These are some of my projects</h2>
+                    <h2>These are some of my projects</h2>
                     <div id="card-container">
                         <Card title="Balance Sheet" origin="Part of the FreeCodeCamp Course." description="Focused on Semantic HTML & Table management, with little CSS." badges={["css", "htmltable"]}/>
                         <Card title="JS Documentation" origin="Part of the FreeCodeCamp Course." description="Focused on Semantic HTML & CSS Optimization." badges={["css", "html"]}/>
@@ -21,6 +21,7 @@ function Main() {
                 <h1 className="no-margin">Let's work together</h1>
                 <p className="no-margin">Care for a coffee?</p>
                     <div className="contact-info">
+                        <div>
                         <a className="contact-card" href="https://www.linkedin.com/in/ayosafacundo/" target="_blank">
                             <img className="invert" src="resources/icons/linkedin.svg" alt="LinkedIn icon"/>
                             LinkedIn
@@ -29,6 +30,8 @@ function Main() {
                             <img className="invert" src="resources/icons/github.svg" alt="Github icon"/>
                             Github
                         </a>
+                        </div>
+                        <div>
                         <a className="contact-card">
                             <img className="invert" src="resources/icons/email.svg" alt="Email icon"/>
                             Email
@@ -37,6 +40,7 @@ function Main() {
                             <img className="invert" src="resources/icons/contact.svg" alt="Contact icon"/>
                             Phone
                         </a>
+                        </div>
                     </div>
                 </section>
             </main>
