@@ -1,6 +1,13 @@
 import React from 'react';
 import './Main.css';
 import Card from '../Cards/Cards.js';
+import { contact, email, github, linkedin } from '../resources/icons/index';
+const ico = {
+    contact: contact,
+    email: email,
+    github: github,
+    linkedin: linkedin
+}
 
 function Main() {
     return <main><section id="about">
@@ -15,6 +22,7 @@ function Main() {
                         <Card title="Balance Sheet" origin="Part of the FreeCodeCamp Course." description="Focused on Semantic HTML & Table management, with little CSS." badges={["css", "htmltable"]}/>
                         <Card title="JS Documentation" origin="Part of the FreeCodeCamp Course." description="Focused on Semantic HTML & CSS Optimization." badges={["css", "html"]}/>
                         <Card title="Product Landing Page" origin="Part of the FreeCodeCamp Course." description="Focused on Responsiveness & Semantic HTML." badges={["css", "html"]}/>
+                        <Card title="Pokedex" origin="Auto-imposed Challenge to test my skills." description="React App using React.js, React Routing and Javascript." badges={["react", "javascript", "css", "html"]} href="https://facundo-ayosa.github.io/pokedex-example/"/>
                     </div>
                 </section>
                 <section id="contact">
@@ -22,22 +30,22 @@ function Main() {
                 <p className="no-margin">Care for a coffee?</p>
                     <div className="contact-info">
                         <div>
-                        <a className="contact-card" href="https://www.linkedin.com/in/ayosafacundo/" target="_blank">
-                            <img className="invert" src="resources/icons/linkedin.svg" alt="LinkedIn icon"/>
+                        <a className="contact-card" href="https://www.linkedin.com/in/ayosafacundo/" target="_blank" rel="noreferrer">
+                            <img className="invert" src={ico.linkedin} alt="LinkedIn icon"/>
                             LinkedIn
                         </a>
-                        <a className="contact-card" href="https://github.com/Facundo-Ayosa" target="_blank">
-                            <img className="invert" src="resources/icons/github.svg" alt="Github icon"/>
+                        <a className="contact-card" href="https://github.com/Facundo-Ayosa" target="_blank" rel="noreferrer">
+                            <img className="invert" src={ico.github} alt="Github icon"/>
                             Github
                         </a>
                         </div>
                         <div>
                         <a className="contact-card">
-                            <img className="invert" src="resources/icons/email.svg" alt="Email icon"/>
+                            <img className="invert" src={ico.email} alt="Email icon"/>
                             Email
                         </a>
                         <a className="contact-card">
-                            <img className="invert" src="resources/icons/contact.svg" alt="Contact icon"/>
+                            <img className="invert" src={ico.contact} alt="Contact icon"/>
                             Phone
                         </a>
                         </div>
