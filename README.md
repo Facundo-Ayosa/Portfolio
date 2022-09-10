@@ -1,6 +1,6 @@
 # Personal Portfolio
 
-[Portfolio made by Ayosa Facundo.](https://facundo-ayosa.github.io/portfolio)
+[Portfolio made by Ayosa Facundo.](https://ayosafacundo.github.io/portfolio)
 
 ## Libraries used:
 
