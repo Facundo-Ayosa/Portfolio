@@ -1,5 +1,5 @@
 {
-  "homepage": "https://facundo-ayosa.github.io/portfolio/",
+  "homepage": "https://ayosafacundo.github.io/",
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
@@ -9,12 +9,13 @@
     "@testing-library/user-event": "^13.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
   "devDependencies": {
-    "gh-pages": "^4.0.0",
-    "@svgr/webpack": "^6.3.0"
+    "@svgr/webpack": "^6.3.0",
+    "gh-pages": "^4.0.0"
   },
   "overrides": {
     "@svgr/webpack": "$@svgr/webpack"

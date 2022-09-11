@@ -1,0 +1,58 @@
+{
+    "projects": [
+    {
+        "id" : 0,
+        "title" : "Balance Sheet",
+        "origin" : "Part of the Web Development Course.",
+        "description": "Focused on Semantic HTML & Table management, with little CSS.",
+        "long_description" : "",
+        "badges" : ["css", "html"],
+        "date": "27th of June 2022"
+    },
+    {
+        "id" : 1,
+        "title" : "JS Documentation",
+        "origin" : "Part of the Web Development Course.",
+        "description": "Focused on Semantic HTML & CSS Optimization.",
+        "long_description": "",
+        "badges" : ["css", "html"],
+        "date": "2nd of July 2022"
+    },
+    {
+        "id" : 2,
+        "title" : "Product Landing Page",
+        "origin" : "Part of the Web Development Course.",
+        "description": "Focused on Responsiveness & Semantic HTML.",
+        "long_description": "",
+        "badges" : ["css", "html"],
+        "date": "4th of July 2022"
+    },
+    {
+        "id" : 3,
+        "title" : "Pokedex",
+        "origin" : "Auto-imposed Challenge to test my skills.",
+        "description": "React App made as a first peek into React.js, using PokeApi v2 Restful API.",
+        "long_description": "",
+        "badges" : ["css", "html", "javascript", "react"],
+        "date": "4th of August 2022"
+    },
+    {
+        "id" : 4,
+        "title" : "Random Anime Quote Machine",
+        "origin" : "Part of the Front End Libraries Course.",
+        "description": "React App made as a project to crystalize my bases on React.js, using AnimeChan Restful API.",
+        "long_description": "",
+        "badges" : ["css", "html", "javascript", "react"],
+        "date": "8th of August 2022"
+    },
+    {
+        "id" : 5,
+        "title" : "Markdown Previewer",
+        "origin" : "Part of the Front End Libraries Course.",
+        "description": "React App made as a project to crystalize my bases on React.js using Markdown-it Library.",
+        "long_description": "",
+        "badges" : ["css", "html", "javascript", "react"],
+        "date": "18th of August 2022"
+    }
+] 
+}

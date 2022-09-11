@@ -3,34 +3,34 @@
   margin: 0px;
 }
 
+header {
+  background-color: var(--alternative-accent);
+  width: 100%;
+}
 /* NAVBAR */
 @media (orientation: landscape){
-  nav {
+  header {
     position: fixed;
-    width: 100%;
-    background-color: var(--accent-color);
     display: flex;
     justify-content: flex-end;
   }
-  nav ul {
+  header ul {
     margin: 0 10px 0 0;
   }
 }
 @media (orientation: portrait) {
-  nav {
+  header {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    background-color: var(--accent-color);
     display: flex;
     justify-content: center;
   }
-  nav ul {
+  header ul {
     margin: 0;
   }
 }
-nav ul {
+header ul {
   padding: 0px;
   display: inline-flex; 
 }
@@ -45,10 +45,10 @@ nav ul {
 }
 .nav-link {
   list-style-type: none;
-  color: var(--darker-dark);
-  text-shadow: 0 0 3px var(--accent-color);
+  text-shadow: 0 0 3px var(--alternative-accent);
   padding: 15px 0px 15px 0px;
+  color: var(--main-white);
 }
 .nav-link:hover a {
-  color: var(--accent-color);
+  color: var(--main-accent);
 }
