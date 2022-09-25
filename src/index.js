@@ -1,9 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './styles/index.css';
-import './styles/navbar.css';
-import Main from './modules/home/main';
-import Blog from './modules/blog/blog';
+import './styles/Sass/Navbar/navbar.css';
+import Main from './pages/home/main.js';
+import Blog from './pages/blog/blog.js';
+import Portfolio from './pages/portfolio/portfolio.js';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -21,6 +22,7 @@ root.render(
       <Routes>
         <Route path="/" element={<Main/>}/>
         <Route path="/blog" element={<Blog/>}/>
+        <Route path="/portfolio" element={<Portfolio/>}/>
       </Routes>
     </Router>
   </React.StrictMode>

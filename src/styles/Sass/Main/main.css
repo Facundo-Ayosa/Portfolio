@@ -1,12 +1,5 @@
-/* Section */
-section {
-    min-height: 100vh;
-    width: 100%;
-    max-width: 100%;
-}
-
 main {
-  background: var(--main-background);
+  background-image: linear-gradient(39deg, rgb(87, 60, 185) 0%, rgb(25, 19, 43) 25%, rgb(10, 9, 8) 50%, rgb(25, 19, 43) 75%, rgb(87, 60, 185) 100%);
 }
 
 /* About Section */
@@ -16,16 +9,18 @@ main {
   justify-content: center;
   text-align: center;
 }
+
 #about h1 {
-  font-family: 'Gidole-Regular';
-  color: var(--main-white)
+  font-family: "Gidole-Regular";
+  color: #FFF;
 }
+
 #about p {
-  color: var(--main-accent);
+  color: #E97925;
 }
 
 @media (orientation: portrait) {
-  #about h1{
+  #about h1 {
     font-size: 6rem;
   }
   #about p {
@@ -52,7 +47,7 @@ main {
   }
 }
 @media (orientation: landscape) {
-  #about h1{
+  #about h1 {
     font-size: 6vw;
   }
   #about p {
@@ -82,15 +77,15 @@ main {
     font-size: 3vw;
   }
 }
-
 /* Projects Section */
 #projects {
   padding-top: 50px;
   align-items: center;
   text-align: center;
 }
+
 #projects h2 {
-  color: var(--main-white);
+  color: #FFF;
   margin: 50px 0 25px 0;
 }
 
@@ -99,18 +94,22 @@ main {
   display: flex;
   flex-direction: row;
 }
+
 #badges-name-container {
   width: 25%;
   background: rgba(0, 0, 0, 0.35);
   border-radius: 25px 0px 0px 25px;
 }
+
 #badges-name-container h2 {
-  color: var(--main-accent);
+  color: #E97925;
 }
+
 #badges-names {
-  color: var(--main-white);
+  color: #FFF;
   font-size: 2rem;
 }
+
 /* Cards */
 #card-container {
   display: flex;
@@ -120,27 +119,30 @@ main {
   margin: auto;
 }
 
-
 /* Contact */
 #contact {
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;    
+  text-align: center;
   flex-direction: column;
 }
+
 #contact h1 {
-  color: var(--alternative-accent);
+  color: #573cb9;
 }
+
 #contact p {
-  color: var(--main-white);
+  color: #FFF;
 }
+
 .contact-info {
   width: 90%;
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
+
 .contact-card {
   display: flex;
   flex-direction: row;
@@ -152,11 +154,13 @@ main {
   border-radius: 15px;
   transition: color 0.5s, background-color 0.5s, box-shadow 0.5s;
 }
+
 .contact-card img {
   margin-right: 5px;
 }
+
 .contact-card:hover {
-  color: var(--main-black);
-  background-color: var(--main-accent);
+  color: #0A0908;
+  background-color: #E97925;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
+}/*# sourceMappingURL=main.css.map */

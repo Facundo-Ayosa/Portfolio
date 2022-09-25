@@ -44,15 +44,17 @@
         "long_description": "",
         "badges" : ["css", "html", "javascript", "react"],
         "date": "8th of August 2022"
-    },
-    {
-        "id" : 5,
-        "title" : "Markdown Previewer",
-        "origin" : "Part of the Front End Libraries Course.",
-        "description": "React App made as a project to crystalize my bases on React.js using Markdown-it Library.",
-        "long_description": "",
-        "badges" : ["css", "html", "javascript", "react"],
-        "date": "18th of August 2022"
     }
-] 
+],
+    "unused" :    [
+    {
+    "id" : 5,
+    "title" : "Markdown Previewer",
+    "origin" : "Part of the Front End Libraries Course.",
+    "description": "React App made as a project to crystalize my bases on React.js using Markdown-it Library.",
+    "long_description": "",
+    "badges" : ["css", "html", "javascript", "react"],
+    "date": "18th of August 2022"
+    }
+]
 }

@@ -1,6 +1,7 @@
 import React from "react";
-import '../../styles/home/card.css'
-import {balancesheet, jsdocumentation, productlandingpage, pokedex, randomquotemachine, filler} from '../../resources/images/index';
+import '../styles/Sass/Card/card.css'
+import {balancesheet, jsdocumentation, productlandingpage, pokedex, randomquotemachine, filler} from '../resources/images/index';
+import { Link } from "react-router-dom";
 
 const icons = {
     html: "fa-html5",
@@ -21,7 +22,7 @@ function Card(props) {
     let badgelist = props.badges.map((e) => {
         return <i className={"fa-brands " + icons[e]}></i>
     });
-    return <a href={props.href} id="card" target="_blank" rel="noreferrer">
+    return <Link to={props.href} id="card">
                 <div className="badges">{badgelist}</div>
                 <img src={img[props.title.replace(/\s+/g, '').toLowerCase()] ? img[props.title.replace(/\s+/g, '').toLowerCase()] : img.filler} alt=""/>
                 <div className="content">
@@ -29,6 +30,6 @@ function Card(props) {
                     <p className="origin no-margin">{props.origin}</p>
                     <p className="no-margin">{props.description}</p>
                 </div>
-            </a>
+            </Link>
 }
 export default Card;
