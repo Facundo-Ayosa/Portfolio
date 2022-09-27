@@ -1,0 +1,61 @@
+.no-margin {
+  margin: 0;
+  padding: 0;
+}
+#card {
+  background: $accentPurple;
+  width: 280px;
+  height: 460px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: $textColorWhite;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  transition: all 1s;
+  img {
+    width: 100%;
+    height: 300px;
+    object-fit: fill;
+  }
+  &:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    scale: 1.15;
+  }
+  .origin {
+    margin-top: 0px;
+    font-size: smaller;
+    color: $textColorGrey;
+  }
+  .project-title {
+    padding-top: 6px;
+    color: $accentOrange;
+    font-family: $titleFont;
+  }
+}
+
+
+.content {
+  min-height: 100px;
+  max-height: 100px;
+  width: 100%;
+  margin: 0px;
+}
+
+#more {
+  margin: auto;
+  font-size: 14rem;
+  i {
+    width: 224px;
+    border: 4px solid $textColorWhite;
+    border-radius: 50%;
+    margin: 0;
+    padding: 0;
+  }
+  p {
+    font-size: 2rem;
+    margin: auto;
+  }
+}

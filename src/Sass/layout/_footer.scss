@@ -1,0 +1,22 @@
+footer {
+    background-color: $textColorBlack;
+    color: $textColorWhite;
+    margin: 0;
+    font-family: $bodyFont;
+    text-align: center;
+    font-size: 1vw;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    border-top: 2px solid $accentOrange;
+    p {
+        margin: 0;
+    }
+    a {
+        margin: 0;
+        text-decoration: none;
+        color: $textColorWhite;
+    }
+    .license{
+        border-width:0
+    }
+}

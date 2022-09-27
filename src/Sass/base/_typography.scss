@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'Gidole-Regular';
+    src:url('./base/Gidole/Gidole-Regular.ttf.woff') format('woff'),
+        url('./base/Gidole/Gidole-Regular.ttf.svg#Gidole-Regular') format('svg'),
+        url('./base/Gidole/Gidole-Regular.ttf.eot'),
+        url('./base/Gidole/Gidole-Regular.ttf.eot?#iefix') format('embedded-opentype'); 
+        font-weight: normal;
+        font-style: normal;
+}
+
+$titleFont: 'Gidole-Regular', Arial, Helvetica;
+$subTitleFont: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+$bodyFont: 'Candara';
+$codeFont: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+}

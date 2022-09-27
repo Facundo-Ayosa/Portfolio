@@ -5,8 +5,8 @@
         "title" : "Balance Sheet",
         "origin" : "Part of the Web Development Course.",
         "description": "Focused on Semantic HTML & Table management, with little CSS.",
-        "long_description" : "",
-        "badges" : ["css", "html"],
+        "longDescription" : "Project made following the FreeCodeCamp Web Development Course, using mostly HTML tables, Semantic HTML and a little CSS. It was required for the Web Development Certificate.",
+        "badges" : ["CSS", "HTML"],
         "date": "27th of June 2022"
     },
     {
@@ -14,8 +14,8 @@
         "title" : "JS Documentation",
         "origin" : "Part of the Web Development Course.",
         "description": "Focused on Semantic HTML & CSS Optimization.",
-        "long_description": "",
-        "badges" : ["css", "html"],
+        "longDescription": "Project made following the FreeCodeCamp Web Development Course, using Semantic HTML and focused on CSS Optimization, started using the D.R.Y. (Don't Repeat Yourself) principle in CSS.",
+        "badges" : ["CSS", "HTML"],
         "date": "2nd of July 2022"
     },
     {
@@ -23,8 +23,8 @@
         "title" : "Product Landing Page",
         "origin" : "Part of the Web Development Course.",
         "description": "Focused on Responsiveness & Semantic HTML.",
-        "long_description": "",
-        "badges" : ["css", "html"],
+        "longDescription": "Project made following the FreeCodeCamp Web Development Course, focused on Semantic HTML, and following the FreeCodeCamp's design guide for their courses. The main concern of this html design was to follow a set of design rules that was already set.",
+        "badges" : ["CSS", "HTML"],
         "date": "4th of July 2022"
     },
     {
@@ -32,8 +32,8 @@
         "title" : "Pokedex",
         "origin" : "Auto-imposed Challenge to test my skills.",
         "description": "React App made as a first peek into React.js, using PokeApi v2 Restful API.",
-        "long_description": "",
-        "badges" : ["css", "html", "javascript", "react"],
+        "longDescription": "My main objective with this project was to learn React using the docs and searching for answers in StackOverflow as the FreeCodeCamp Course I used to learn the basics of React didn't help much. It used deprecated functions and structure, like JS Classes for each JSX module instead of functions, lifecycle methods that are now unsafe, and so on, so I challenged myself to learn React all by myself, without any course nor explicit guide, forcing myself to adapt my reasoning for the new framework. To spice it up, I tried to learn how a Restful Api calls works, and making use of the DRY (Don't Repeat Yourself) principle. The hardest problem was to learn Promises and Async programming, as I needed it for making request to the API.",
+        "badges" : ["CSS", "HTML", "JavaScript", "React"],
         "date": "4th of August 2022"
     },
     {
@@ -41,8 +41,8 @@
         "title" : "Random Anime Quote Machine",
         "origin" : "Part of the Front End Libraries Course.",
         "description": "React App made as a project to crystalize my bases on React.js, using AnimeChan Restful API.",
-        "long_description": "",
-        "badges" : ["css", "html", "javascript", "react"],
+        "longDescription": "My main objective with this project was to make a single page webapp that took a random quote from an Anime Restful API and showed it on the screen, I developed the webapp mobile-first, and used the D.R.Y. (Don't Repeat Yourself) and KISS (Keep It Simple, Stupid) principle. The hardest problem i had to overcome was that the Api had long quotes that didn't fit inside the card, what I ended up doing was filtering the request so that if the quote had more than 150 characters, it'd ask for a new one.",
+        "badges" : ["CSS", "HTML", "JavaScript", "React"],
         "date": "8th of August 2022"
     }
 ],
@@ -52,8 +52,8 @@
     "title" : "Markdown Previewer",
     "origin" : "Part of the Front End Libraries Course.",
     "description": "React App made as a project to crystalize my bases on React.js using Markdown-it Library.",
-    "long_description": "",
-    "badges" : ["css", "html", "javascript", "react"],
+    "longDescription": "",
+    "badges" : ["CSS", "HTML", "JavaScript", "React"],
     "date": "18th of August 2022"
     }
 ]

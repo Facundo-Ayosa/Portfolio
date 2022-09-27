@@ -1,0 +1,28 @@
+@import './base/typography';
+@import './sass-utils/variables';
+@import './Components/card';
+@import './Components/badges';
+@import './layout/navbar';
+@import './layout/footer';
+@import './pages/home';
+@import './pages/projects';
+@import './pages/education';
+@import './pages/contact';
+
+main {
+    background-image: $backgroundGradient;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  max-width: 100vw;
+}
+.full-size {
+  min-height: 100vh;
+  width: 100%;
+  max-width: 100%;
+}
