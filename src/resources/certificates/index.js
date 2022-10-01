@@ -1,3 +1,5 @@
-import javascript from './Certification Javascript Algorithms and Data Structures.png';
-import webDesign from './Responsive Web Design.png';
-export { javascript, webDesign };
+import javascriptalgorithmsanddatastructures from './javascriptalgorithmsanddatastructures.png';
+import responsivewebdesign from './responsivewebdesign.png';
+
+
+export { javascriptalgorithmsanddatastructures, responsivewebdesign };

@@ -3,48 +3,66 @@
     flex-direction: row;
     align-self: center;
     flex-wrap: nowrap;
-    font-size: 2.5em;
-    padding: 5px;
+    font-size: 2em;
     color: $textColorWhite;
+
     i {
         padding: 0 5px 0 5px;
     }
-    .popover__wrapper {
+
+    .tooltip {
+        /* Used to position the arrow */
         position: relative;
-        margin-top: 1.5rem;
-        display: inline-block;
-        .popover__content{
-            opacity: 0;
-            visibility: hidden;
-            position: absolute;
-            left: -150px;
-            transform: translate(0, 10px);
-            background-color: #bfbfbf;
-            padding: 1.5rem;
-            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
-            width: auto;
-            &:before {
-                position: absolute;
-                z-index: -1;
-                content: "";
-                right: calc(50% - 10px);
-                top: -8px;
-                border-style: solid;
-                border-width: 0 10px 10px 10px;
-                border-color: transparent transparent #bfbfbf transparent;
-                transition-duration: 0.3s;
-                transition-property: transform;
-            }
-        }
-        &:hover {
-            .popover__content {
-                z-index: 10;
-                opacity: 1;
-                visibility: visible;
-                transform: translate(0, -20px);
-                transition: all 0.5s cubic-bezier(0.75, -0.02, 0.2, 0.97);
-                
-            }    
-        }
+    }
+
+    /* Show the arrow and content and restore pointer events when hovering the trigger element */
+    .tooltip:hover .tooltip__arrow,
+    .tooltip:hover .tooltip__content {
+        opacity: 1;
+        pointer-events: initial;
+        transition: all 0.3s;
+    }
+
+    .tooltip__arrow {
+        /* Invisible by default */
+        opacity: 0;
+        /* To prevent accidental interactions with other elements  */
+        pointer-events: none;
+        /* Border */
+        border: 0.52rem solid transparent;
+        border-top-color: #111827;
+        /* Position */
+        bottom: 100%;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%, 8px);
+        /* Zero size */
+        height: 0;
+        width: 0;
+        /* Displayed on top of other element */
+        z-index: 10;
+
+        transition: all 0.3s;
+    }
+
+    .tooltip__content {
+        /* Invisible by default */
+        opacity: 0;
+        /* To prevent accidental interactions with other elements  */
+        pointer-events: none;
+        /* Background color, must be the same as the border color of arrow */
+        background-color: #111827;
+        border-radius: 0.25rem;
+        padding: 5px;
+        /* Position */
+        bottom: 100%;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%, -8px);
+        color: $accentOrange;
+        /* Displayed on top of other element */
+        z-index: 10;
+
+        transition: all 0.3s;
     }
 }

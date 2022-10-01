@@ -1,4 +1,4 @@
-export default function ListBadges(badges = []) {
+export default function ListBadges(badges) {
     const icons = {
         html: "fa-html5",
         javascript: "fa-js",
@@ -7,6 +7,12 @@ export default function ListBadges(badges = []) {
         css: "fa-css3-alt"
     }
     return <div className="badges">{badges.map((e) => {
-        return <div id="popover__wrapper"><i className={"fa-brands " + icons[e.toLowerCase()]}></i><div className='popover__Content'>{e}</div></div>
+        return (<div class="tooltip">
+                <div class="tooltip__content">
+                {e}
+                </div>
+                <div class="tooltip__arrow"></div>
+                <i className={"fa-brands " + icons[e.toLowerCase()]}></i>
+                </div>)
     })}</div>
 }

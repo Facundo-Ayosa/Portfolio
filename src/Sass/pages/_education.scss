@@ -1,79 +1,71 @@
-#root {
-    background: $backgroundGradient;
+#certificates {
+    font-size: 4vw;
+    color: $textColorWhite;
+    text-align: center;
+    margin: 10px 0 10px 0;
+    font-family: $titleFont;
 }
-#educationPage {
-    h1 {
-        margin: 10px 0 0 0;
+
+.accordion {
+    /* Border */
+    border: 1px solid #d1d5db;
+    border-bottom-color: transparent;
+    border-radius: 4px;
+    color: $textColorWhite;
+    font-family: $codeFont;
+    width: 95%;
+    margin: auto;
+    background-color: $darken-background;
+    border-bottom: 1px solid #d1d5db;
+
+    .accordion__button {
+        margin-right: 12px;
+        font-family: $codeFont;
         color: $textColorWhite;
-        text-align: center;
-        font-family: $titleFont;
+        background: none;
+        border: none;
+        display: flex;
+        cursor: pointer;
+        /* Take remaining width */
+        flex: 1;
+        align-items: center;
+        padding: 16px;
+        display: flex;
+        justify-content: space-between;
     }
-    @media (orientation: portrait) {
-        section {
-            margin-top: 25px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            article {
-                width: 95vw;
-                margin-top: 25px;
-                border: 2px solid $accentOrange;
-                #title {
-                    background: linear-gradient(0deg, rgba(87,60,185,1) 0%, rgba(25,19,43,1) 25%, rgba(10,9,8,1) 100%);
-                    h3 {
-                        margin: 0;
-                        padding: 10px;
-                        color: $accentOrange;
-                        text-align: center;
-                        font-family: $subTitleFont;
-                        font-size: 3vw;
-                    }
-                }
-                img {
-                    box-sizing: border-box;
-                    padding: 15px;
-                    display: block;
-                    aspect-ratio: 9/7;
-                    max-width: 95vw;
-                    background-color: $accentPurple;
-                }
-            }
+
+    .accordion__content {
+        display: flex;
+        height: 0px;
+        overflow: hidden;
+    }
+
+    .accordion__content-active {
+        border-top: 1px solid #d1d5db;
+        padding: 16px;
+        display: flex;
+        height: auto;
+
+        img {
+            height: auto;
+            width: 35vw;
+            margin-right: 20px;
         }
 
-    }
-    @media (orientation: landscape) {
-        section {
-            margin-top: 25px;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            align-content: flex-start;
-            min-height: 100vh;
-            article {
-                margin: auto;
-                border: 2px solid $accentOrange;
-                width: 45%;
-                height: auto;
-                #title {
-                    background-color: $accentPurple;
-                    h3 {
-                        margin: 0;
-                        padding: 10px 0 15px 0;
-                        color: $textColorWhite;
-                        text-align: center;
-                        font-family: $titleFont;
-                        font-size: 1.5vw;
-                    }
-                }
-                img {
-                    display: block;
-                    aspect-ratio: 9/7;
-                    max-width: 100%;
-                    box-sizing: border-box;
-                    padding: 15px;
-                    background: linear-gradient(180deg, rgba(87,60,185,1) 0%, rgba(25,19,43,1) 45%, rgba(10,9,8,0) 100%);
-                }
+        .text {
+            display: block;
+
+            .date {
+                padding-left: 10px;
+                color: $textColorGrey
+            }
+
+            h3 {
+                color: $accentOrange;
+            }
+
+            ul {
+                list-style-type: circle;
             }
         }
     }

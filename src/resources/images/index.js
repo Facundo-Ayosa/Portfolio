@@ -5,4 +5,4 @@ import pokedex from './pokedex.png'
 import randomanimequotemachine from './randomanimequotemachine.png'
 import filler from './filler.png'
 
-export {balancesheet, jsdocumentation, pokedex, productlandingpage, randomanimequotemachine, filler};
+export { balancesheet, jsdocumentation, pokedex, productlandingpage, randomanimequotemachine, filler };

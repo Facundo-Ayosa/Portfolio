@@ -1,25 +1,23 @@
 import React from 'react';
-import * as certificates from '../resources/certificates';
+import Certificate from '../Components/certificate';
+import data from '../resources/database.json';
 function Education() {
-  return (
-    <main id="educationPage">
-        <h1>Certificates</h1>
-        <section>
-            <article>
-                <div id="title">
-                    <h3>Javascript Algorithms and Data Structures Certificate</h3>
-                </div>
-                <img src={certificates.javascript} alt="Javascript Algorithms and Data Structures Certificate From FreeCodeCamp.org"/>
-            </article>
-            <article>
-                <div id="title">
-                    <h3>Responsive Web Design</h3>
-                </div>
-                <img src={certificates.webDesign} alt="Responsive Web Design Certificate From FreeCodeCamp.org"/>
-            </article>
-        </section>
-    </main>
-  )
+
+    return (
+        <main>
+            <h1 id="certificates">Certificates</h1>
+            <section>
+                {formatCertificates()}
+            </section>
+        </main>
+    )
+}
+
+function formatCertificates() {
+    let array = data.certificates.map((e, i) => {
+        return <Certificate data={e} key={i} />
+    });
+    return array;
 }
 
 export default Education;

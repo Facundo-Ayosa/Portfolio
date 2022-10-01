@@ -8,7 +8,7 @@ function ProjectArticle(props) {
     <div id='info-box'>
       <h2>{props.data.title}</h2>
       <h3>{props.data.origin}</h3>
-      {ListBadges()}
+      {ListBadges(props.data.badges)}
       <p>{props.data.longDescription}</p>
     </div>
   </article>)
