@@ -10,7 +10,8 @@
                 "HTML",
                 "CSS"
             ],
-            "date": "27th of June 2022"
+            "date": "27th of June 2022",
+            "href": ""
         },
         {
             "id": 1,
@@ -22,7 +23,8 @@
                 "HTML",
                 "CSS"
             ],
-            "date": "2nd of July 2022"
+            "date": "2nd of July 2022",
+            "href": ""
         },
         {
             "id": 2,
@@ -34,7 +36,8 @@
                 "HTML",
                 "CSS"
             ],
-            "date": "4th of July 2022"
+            "date": "4th of July 2022",
+            "href": ""
         },
         {
             "id": 3,
@@ -48,7 +51,8 @@
                 "JavaScript",
                 "React"
             ],
-            "date": "4th of August 2022"
+            "date": "4th of August 2022",
+            "href": "pokedex-example/"
         },
         {
             "id": 4,
@@ -62,7 +66,8 @@
                 "JavaScript",
                 "React"
             ],
-            "date": "8th of August 2022"
+            "date": "8th of August 2022",
+            "href": "RandomQuoteMachine/"
         }
     ],
     "unused": [

@@ -56,7 +56,7 @@ function Home() {
 //Amount refers to how many cards, counting from the last, this will format into JSX Component
 function formatCards(amount = 3) {
     let array = data.projects.sort((a, b) => { return a.id - b.id }).slice(-amount).map((e, i) => {
-        return <Card key={i} href={'/portfolio/' + e.title.replace(/\s+/g, '').toLowerCase()} title={e.title} origin={e.origin} description={e.description} badges={e.badges} />;
+        return <Card key={i} href={"/portfolio/projects/"} title={e.title} origin={e.origin} description={e.description} badges={e.badges} />;
     }).reverse();
     array.push(<Link to="/portfolio/projects" id="card" onClick={scrollToTop}>
         <div id="more">
