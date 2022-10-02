@@ -3,7 +3,7 @@ import * as img from '../resources/images/index';
 import { Link } from "react-router-dom";
 import ListBadges from './utility/ListBadges';
 function Card(props) {
-    return (<Link to={props.href} id="card">
+    return (<Link to={props.href ? props.href : "/portfolio/projects"} id="card">
         <img src={img[props.title.replace(/\s+/g, '').toLowerCase()] ? img[props.title.replace(/\s+/g, '').toLowerCase()] : img.filler} alt="" />
         {ListBadges(props.badges)}
         <div className="content">
