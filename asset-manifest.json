@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.b1abf61e.css",
-    "main.js": "/portfolio/static/js/main.6663f6dc.js",
+    "main.js": "/portfolio/static/js/main.8964079a.js",
     "static/media/Gidole-Regular.ttf.svg": "/portfolio/static/media/Gidole-Regular.ttf.842d1a7dd4654b78f6b3.svg",
     "static/media/productlandingpage.png": "/portfolio/static/media/productlandingpage.5e4373ba03c5d0bae125.png",
     "static/media/pokedex.png": "/portfolio/static/media/pokedex.dcd98904d844b3b9dc5f.png",
@@ -14,10 +14,10 @@
     "static/media/Gidole-Regular.ttf.woff": "/portfolio/static/media/Gidole-Regular.ttf.821569bcbc05bfefb404.woff",
     "index.html": "/portfolio/index.html",
     "main.b1abf61e.css.map": "/portfolio/static/css/main.b1abf61e.css.map",
-    "main.6663f6dc.js.map": "/portfolio/static/js/main.6663f6dc.js.map"
+    "main.8964079a.js.map": "/portfolio/static/js/main.8964079a.js.map"
   },
   "entrypoints": [
     "static/css/main.b1abf61e.css",
-    "static/js/main.6663f6dc.js"
+    "static/js/main.8964079a.js"
   ]
 }
