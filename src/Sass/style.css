@@ -74,6 +74,22 @@ code {
   transition: all 0.3s;
 }
 
+.content-box {
+  width: 70%;
+  height: 75%;
+  margin: 20px auto;
+  background: rgba(10, 9, 8, 0.5);
+  display: flex;
+  flex-direction: column;
+  border-radius: 25px;
+  padding-bottom: 25px;
+}
+
+@media (orientation: portrait) {
+  .content-box {
+    width: 100%;
+  }
+}
 header {
   width: 100%;
   position: absolute;
@@ -457,55 +473,126 @@ header ul {
   list-style-type: circle;
 }
 
-#aboutme .content-box {
-  width: 70%;
-  height: 75%;
-  margin: 20px auto;
-  background: rgba(10, 9, 8, 0.5);
-  display: flex;
-  flex-direction: column;
-  border-radius: 25px;
+#contactForm .content-box h2 {
+  margin: 15px;
+  text-align: center;
+  color: #FFF;
+  font-size: xx-large;
 }
-#aboutme .content-box img {
-  height: 400px;
-  width: 400px;
+#contactForm .content-box form {
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  color: #FFF;
+  width: 65%;
+}
+#contactForm .content-box form .input {
+  padding: 5px 15px;
+  background-color: #FFF;
+  color: #0A0908;
+  border: 0;
+  border-radius: 15px;
+  font-size: larger;
+  min-width: calc(100% - 30px);
+  max-width: calc(100% - 30px);
+}
+#contactForm .content-box form #name {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-size: larger;
+  margin: 0 0 5px 10px;
+}
+#contactForm .content-box form #email {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-size: larger;
+  margin: 10px 0 5px 10px;
+}
+#contactForm .content-box form #message {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-size: larger;
+  margin: 10px 0 5px 10px;
+}
+#contactForm .content-box form #submitbtn {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 5px 35px;
+  border-radius: 15px;
+  border: 0;
+  background-color: #E97925;
+  align-self: center;
+  font-size: large;
+  color: #FFF;
+  margin-top: 15px;
+}
+#contactForm .content-box form #submitbtn:active {
+  background-color: greenyellow;
+}
+#contactForm .content-box form #submitbtn:disabled {
+  background-color: #573cb9;
+  color: #0A0908;
+}
+#contactForm .content-box form .sent {
+  background-color: #FFF;
+  color: #0A0908;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  align-self: center;
+  padding: 15px;
+  border-radius: 25px;
+  transition: opacity 0.5s;
+}
+#contactForm .content-box form .hidden {
+  opacity: 0;
+}
+
+#aboutme img {
+  height: 50vw;
+  max-height: 400px;
+  width: auto;
   aspect-ratio: 1/1;
   margin: 15px auto 15px auto;
   border-radius: 50%;
   border: 5px solid #E97925;
 }
-#aboutme .content-box .box {
+#aboutme .box {
   color: #FFF;
 }
-#aboutme .content-box .box h1 {
+#aboutme .box h1 {
   text-align: center;
   margin: 0;
   font-size: 3.5vw;
 }
-#aboutme .content-box .box h4 {
-  margin: 50px 25px 10px;
+#aboutme .box h3 {
+  margin: 0;
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
   font-size: 2vw;
+  color: #E97925;
+  text-align: center;
 }
-#aboutme .content-box .box .father-list {
-  padding-left: 50px;
+#aboutme .box h4 {
+  margin-left: 25px;
+  font-size: larger;
+}
+#aboutme .box .father-list {
+  padding-left: 2rem;
   list-style-type: none;
   width: 75%;
   margin: auto;
 }
-#aboutme .content-box .box .father-list li {
+#aboutme .box .father-list li {
   border: 1px solid #FFF;
   padding: 5px;
   border-radius: 5px;
   background-color: #573cb9;
   margin-bottom: 5px;
 }
-#aboutme .content-box .box .father-list .clicked {
+#aboutme .box .father-list .clicked {
   background-color: #E97925;
   color: #0A0908;
   margin-bottom: 0;
 }
-#aboutme .content-box .box .father-list .active {
+#aboutme .box .father-list .active {
   display: block;
   padding-left: 10px;
   height: auto;
@@ -513,90 +600,41 @@ header ul {
   visibility: visible;
   opacity: 1;
 }
-#aboutme .content-box .box .father-list .active li {
+#aboutme .box .father-list .active li {
   margin-bottom: 0;
   list-style-type: none;
 }
-#aboutme .content-box .box .father-list .active li:last-child {
+#aboutme .box .father-list .active li:last-child {
   margin-bottom: 15px;
 }
-#aboutme .content-box .box .father-list .collapsed {
-  display: block;
-  transition: all 0.33s;
-  overflow: hidden;
-  height: 0px;
-}
-
-#aboutme .content-box {
-  width: 70%;
-  height: 75%;
-  margin: 20px auto;
-  background: rgba(10, 9, 8, 0.5);
-  display: flex;
-  flex-direction: column;
-  border-radius: 25px;
-}
-#aboutme .content-box img {
-  height: 400px;
-  width: 400px;
-  aspect-ratio: 1/1;
-  margin: 15px auto 15px auto;
-  border-radius: 50%;
-  border: 5px solid #E97925;
-}
-#aboutme .content-box .box {
-  color: #FFF;
-}
-#aboutme .content-box .box h1 {
-  text-align: center;
-  margin: 0;
-  font-size: 3.5vw;
-}
-#aboutme .content-box .box h4 {
-  margin: 50px 25px 10px;
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
-  font-size: 2vw;
-}
-#aboutme .content-box .box .father-list {
-  padding-left: 50px;
-  list-style-type: none;
-  width: 75%;
-  margin: auto;
-}
-#aboutme .content-box .box .father-list li {
-  border: 1px solid #FFF;
-  padding: 5px;
-  border-radius: 5px;
-  background-color: #573cb9;
-  margin-bottom: 5px;
-}
-#aboutme .content-box .box .father-list .clicked {
+#aboutme .box .father-list .active li .linkBtn {
   background-color: #E97925;
-  color: #0A0908;
-  margin-bottom: 0;
+  color: #FFF;
+  padding: 3px 12px;
+  border-radius: 5px;
+  font-family: "Gidole-Regular", Arial, Helvetica;
+  margin: 5px;
+  text-decoration: none;
+  font-size: x-large;
 }
-#aboutme .content-box .box .father-list .active {
-  display: block;
-  padding-left: 10px;
-  height: auto;
-  transition: all 0.33s;
-  visibility: visible;
-  opacity: 1;
-}
-#aboutme .content-box .box .father-list .active li {
-  margin-bottom: 0;
-  list-style-type: none;
-}
-#aboutme .content-box .box .father-list .active li:last-child {
-  margin-bottom: 15px;
-}
-#aboutme .content-box .box .father-list .collapsed {
+#aboutme .box .father-list .collapsed {
   display: block;
   transition: all 0.33s;
   overflow: hidden;
   height: 0px;
 }
 
+@media (orientation: portrait) {
+  #aboutMe .box {
+    width: 95%;
+  }
+  #aboutMe .box h1 {
+    font-size: 5vw;
+  }
+  #aboutMe .box h3 {
+    font-size: 4vw;
+  }
+}
 footer {
   background-color: #0A0908;
   color: #FFF;
@@ -629,66 +667,6 @@ footer .license {
     font-size: 2vw;
   }
 }
-.ribbon {
-  /* Center the content */
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  /* Size */
-  height: 2rem;
-  width: 50%;
-  margin: auto;
-  /* Use to position the corners */
-  position: relative;
-}
-.ribbon .ribbon__content {
-  /* Background color */
-  background-color: #E97925;
-  z-index: 1;
-  height: 100%;
-  width: 100%;
-}
-.ribbon .ribbon__content h3 {
-  margin: calc(2rem - 32px);
-  height: 100%;
-  display: flex;
-  align-self: baseline;
-  justify-content: center;
-}
-.ribbon .ribbon__side {
-  bottom: -0.5rem;
-  position: absolute;
-  /* Displayed under the ribbon */
-  z-index: 1;
-  /* Background */
-  border: 1rem solid #E97925;
-}
-.ribbon .ribbon__side--l {
-  /* Position */
-  left: -1.5rem;
-  border-color: #E97925 #E97925 #E97925 transparent;
-}
-.ribbon .ribbon__side--r {
-  /* Position */
-  right: -1.5rem;
-  border-color: #E97925 transparent #E97925 #E97925;
-}
-.ribbon .ribbon__triangle {
-  position: absolute;
-  top: 100%;
-  border: 0.5rem solid transparent;
-  border-bottom-width: 0;
-  border-top-color: #E97925;
-}
-.ribbon .ribbon__triangle--l {
-  border-right-width: 0;
-  left: 0;
-}
-.ribbon .ribbon__triangle--r {
-  border-left-width: 0;
-  right: 0;
-}
-
 main {
   padding-top: 50px;
   padding-bottom: 50px;

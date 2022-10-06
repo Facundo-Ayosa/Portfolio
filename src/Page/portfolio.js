@@ -4,17 +4,17 @@ import ProjectArticle from '../Components/projectarticle';
 function portfolio() {
   return (
     <main id="portfolioPage">
-        <section>
-          {formatProjects()}
-        </section>
+      <section>
+        {formatProjects()}
+      </section>
     </main>
   )
 }
 
-function formatProjects(){
+function formatProjects() {
   let array = data.projects.sort((a, b) => { return b.id - a.id });
-  return array.map((e)=>{
-    return <ProjectArticle data={e} key={e.id} />
+  return array.map((e, i) => {
+    return <ProjectArticle data={e} key={i} />
   });
 }
 

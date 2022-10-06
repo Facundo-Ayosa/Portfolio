@@ -1,16 +1,16 @@
 @import './base/typography';
 @import './sass-utils/variables';
 @import './Components/badges';
+@import './components/content-box';
 @import './layout/navbar';
 @import './pages/home';
 @import './layout/projectsSection';
 @import './Components/card';
 @import './pages/projects';
 @import './pages/education';
-@import './pages/contact';
+@import './layout/contactForm';
 @import './pages/contact';
 @import './layout/footer';
-@import './components/ribbon';
 
 main {
   padding-top: 50px;
