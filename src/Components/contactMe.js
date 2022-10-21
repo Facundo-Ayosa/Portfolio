@@ -28,7 +28,7 @@ export const ContactMe = () => {
             <label id="message">Message</label>
             <textarea className='input' name="message" required />
             <input id="submitbtn" type="submit" value="Send" disabled={wasSent} />
-            <p className={wasSent ? 'sent' : 'hidden'}><i class="fa-solid fa-paper-plane"></i> Sent!</p>
+            <p className={wasSent ? 'sent' : 'hidden'}><i className="fa-solid fa-paper-plane"></i> Sent!</p>
         </form>
     </>
     );

@@ -16,8 +16,8 @@ function Certificate(data, i) {
                 <p className='date'>Started in {e.startDate} <br /> Finished in {e.endDate}</p>
                 <p>{e.description}</p>
                 <ul>
-                    {e.profficiencies.map(e => {
-                        return <li>{e}</li>;
+                    {e.profficiencies.map((e, i) => {
+                        return <li key={i}>{e}</li>;
                     })}
                 </ul>
             </div>

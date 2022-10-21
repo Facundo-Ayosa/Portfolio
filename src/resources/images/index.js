@@ -1,8 +1,8 @@
-import balancesheet from './balancesheet.png'
-import jsdocumentation from './jsdocumentation.png'
-import productlandingpage from './productlandingpage.png'
-import pokedex from './pokedex.png'
-import randomanimequotemachine from './randomanimequotemachine.png'
-import filler from './filler.png'
+import balancesheet from './balancesheet.webp'
+import jsdocumentation from './jsdocumentation.webp'
+import productlandingpage from './productlandingpage.webp'
+import pokedex from './pokedex.webp'
+import randomanimequotemachine from './randomanimequotemachine.webp'
+import filler from './filler.webp'
 
 export { balancesheet, jsdocumentation, pokedex, productlandingpage, randomanimequotemachine, filler };

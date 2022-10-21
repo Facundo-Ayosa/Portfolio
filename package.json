@@ -1,5 +1,18 @@
 {
   "homepage": "https://ayosafacundo.github.io/portfolio",
+  "bugs": {
+    "url": "https://github.com/ayosafacundo/portfolio/issues",
+    "email": "ayosafacundo@gmail.com"
+  },
+  "author": {
+    "name": "Facundo Ezequiel Ayosa",
+    "email": "ayosafacundo@gmail.com"
+  },
+  "description": "A peek inside my brain",
+  "repository": {
+    "type": "Github",
+    "url": "https://github.com/ayosafacundo/portfolio"
+  },
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,

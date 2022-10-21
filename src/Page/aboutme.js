@@ -38,7 +38,6 @@ function AboutMe() {
         </main>
     )
 }
-
 function Collapsibleul(props) {
     const [isActive, setActive] = useState(false);
     const clickHandler = () => {
@@ -47,7 +46,7 @@ function Collapsibleul(props) {
     return (<>
         <li className={isActive ? "clicked" : null}><div onClick={clickHandler}><i className={isActive ? "fa-solid fa-caret-up" : "fa-solid fa-caret-down"}></i> {props.father}</div></li>
         <ul className={isActive ? "active" : "collapsed"}>
-            {props.childs.map(e => <li>{e}</li>)}
+            {props.childs.map((e, i) => <li key={i}>{e}</li>)}
         </ul></>
     )
 }

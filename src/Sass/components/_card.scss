@@ -1,8 +1,4 @@
-.no-margin {
-  margin: 0;
-  padding: 0;
-}
-#card {
+.card {
   background: $darken-background;
   width: 280px;
   height: 460px;
@@ -23,24 +19,29 @@
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     scale: 1.01;
   }
-  .origin {
-    margin-top: 0px;
-    font-size: smaller;
-    color: $textColorGrey;
-  }
   .project-title {
+    margin: 0;
     padding: 0;
-    color: $accentOrange;
+    color: $textColorWhite;
     font-family: $titleFont;
   }
-}
-
-
-.content {
-  min-height: 100px;
-  max-height: 100px;
-  width: 100%;
-  margin: 0px;
+  .content {
+    min-height: 100px;
+    max-height: 100px;
+    width: 100%;
+    margin: 0px;
+    overflow: hidden;
+    .origin {
+      margin: 0;
+      padding: 0;
+      font-size: smaller;
+      color: $textColorGrey;
+    }
+    .description {
+      margin: 0;
+      padding: 0;
+    }
+  }
 }
 
 #more {

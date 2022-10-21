@@ -4,7 +4,7 @@
 @import './components/content-box';
 @import './layout/navbar';
 @import './pages/home';
-@import './layout/projectsSection';
+@import './components/diagonal';
 @import './Components/card';
 @import './pages/projects';
 @import './pages/education';
@@ -18,7 +18,6 @@ main {
 }
 
 body {
-  background-image: $backgroundGradient;
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

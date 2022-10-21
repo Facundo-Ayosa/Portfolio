@@ -28,7 +28,6 @@ root.render(
     </Router>
     <footer>
       <p>Made by Ayosa Facundo Ezequiel</p>
-      <p></p>
     </footer>
   </React.StrictMode>
 );
