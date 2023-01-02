@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import ListBadges from './utility/ListBadges';
 function Card(props) {
     return (<Link to={props.href ? props.href : "/portfolio/projects"} className="card" id={props.title}>
-        <img src={img[props.title.replace(/\s+/g, '').toLowerCase()] ? img[props.title.replace(/\s+/g, '').toLowerCase()] : img.filler} alt="" />
+        <img src={img[props.title.replace(/\s+/g, '').toLowerCase()] ? img[props.title.replace(/\s+/g, '').toLowerCase()] : img.filler} alt="" loading="lazy" />
         {ListBadges(props.badges)}
         <div className="content">
             <h3 className="project-title no-margin">{props.title}</h3>
