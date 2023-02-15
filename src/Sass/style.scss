@@ -1,35 +1,41 @@
+/* [ABSTRACTS] */
+@import './abstracts/variables';
+
+/* [BASE] */
+@import './base/reset';
 @import './base/typography';
+
+/* [COMPONENTS] */
+
+
+/* [LAYOUT] */
+@import './layout/sidebar';
+
+/* [PAGES] */
+
+
+/*@import './base/typography';
+@import './base/reset';
+
+
 @import './sass-utils/variables';
+
 @import './Components/badges';
 @import './components/content-box';
+
 @import './layout/navbar';
+
+
 @import './pages/home';
+
 @import './components/diagonal';
 @import './Components/card';
+
 @import './pages/projects';
 @import './pages/education';
+
 @import './layout/contactForm';
+
 @import './pages/contact';
-@import './layout/footer';
 
-main {
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-body {
-  margin: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  max-width: 100vw;
-}
-
-section {
-  min-height: 100vh;
-  width: 100%;
-  max-width: 100%;
-}
-
-* {
-  font-display: "swap";
-}
+@import './layout/footer';*/
