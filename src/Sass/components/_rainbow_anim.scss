@@ -1,0 +1,19 @@
+.rainbow_anim {
+    background: linear-gradient(-45deg, rgba(233, 121, 37, 1), rgba(87, 60, 185, 1), rgba(233, 121, 37, 1), rgba(87, 60, 185, 1));
+    background-size: 300%;
+    font-family: $fontTitle;
+    letter-spacing: -5px;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animated_text 10s linear infinite;
+}
+
+@keyframes animated_text {
+    0% {
+        background-position: 0%;
+    }
+
+    100% {
+        background-position: 100%;
+    }
+}

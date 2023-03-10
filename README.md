@@ -1,6 +1,10 @@
 # Personal Portfolio
 
-[Portfolio made by Ayosa Facundo.](https://ayosafacundo.github.io/portfolio)
+[Portfolio Developed by Ayosa Facundo.](https://ayosafacundo.github.io/portfolio)
+[Design Made by Shakhlo Kurbonova](https://www.behance.net/gallery/161505165/Site-portfolio-for-Front-end-developer?tracking_source=search_projects%7Cdeveloper+Portfolio+website)
+[Some design aspects taken from Luiz Augusto Santos](https://www.behance.net/gallery/118415669/Portfolio-Website?tracking_source=search_projects%7Cdeveloper+Portfolio+website)
+
+[Illustrations](https://freesvgillustration.com/product/software-developer/)
 
 ## Libraries used:
 

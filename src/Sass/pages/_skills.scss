@@ -1,0 +1,110 @@
+#skills {
+    display: flex;
+    flex-direction: column;
+    color: $white;
+
+    h2 {
+        font-family: $fontTitle;
+    }
+
+    .container {
+        box-sizing: border-box;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        gap: 2rem;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100%;
+
+        @media (max-width: 706px) {
+            display: flex;
+            flex-direction: column;
+            overflow-x: scroll;
+            scroll-snap-type: x mandatory;
+            height: 450px;
+            padding-left: 50px;
+
+            .card {
+                scroll-snap-align: center;
+            }
+        }
+
+
+        @media (min-width: 708px) and (max-width: 1023px) {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+
+            .card-1 {
+                grid-area: 1 / 1 / 2 / 2;
+            }
+
+            .card-2 {
+                grid-area: 1 / 2 / 2 / 3;
+            }
+
+            .card-3 {
+                grid-area: 1 / 3 / 2 / 4;
+            }
+
+            .card-4 {
+                grid-area: 2 / 1 / 3 / 2;
+            }
+
+            .card-5 {
+                grid-area: 2 / 2 / 3 / 3;
+            }
+
+            .card-6 {
+                grid-area: 2 / 3 / 3 / 4;
+            }
+
+            .card-7 {
+                display: none;
+            }
+
+            .card-8 {
+                display: none;
+            }
+        }
+
+        @media (min-width: 1023px) {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+
+            .card-1 {
+                grid-area: 1 / 1 / 2 / 2;
+            }
+
+            .card-2 {
+                grid-area: 1/2/2/3;
+            }
+
+            .card-3 {
+                grid-area: 1/3/2/4;
+            }
+
+            .card-4 {
+                grid-area: 1/4/2/5;
+            }
+
+            .card-5 {
+                grid-area: 2/1/3/2;
+            }
+
+            .card-6 {
+                grid-area: 2/2/3/3;
+            }
+
+            .card-7 {
+                grid-area: 2/3/3/4;
+            }
+
+            .card-8 {
+                grid-area: 2/4/3/5;
+            }
+        }
+    }
+}

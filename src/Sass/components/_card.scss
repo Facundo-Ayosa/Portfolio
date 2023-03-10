@@ -1,61 +1,175 @@
 .card {
-  background: $darken-background;
-  width: 280px;
-  height: 460px;
-  margin: 10px;
-  display: flex;
-  flex-direction: column;
-  border-radius: 5px;
-  text-decoration: none;
-  color: $textColorWhite;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-  transition: all 1s;
-  img {
+    position: relative;
     width: 100%;
-    height: 300px;
-    object-fit: fill;
-  }
-  &:hover {
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    scale: 1.01;
-  }
-  .project-title {
-    margin: 0;
-    padding: 0;
-    color: $textColorWhite;
-    font-family: $titleFont;
-  }
-  .content {
-    min-height: 100px;
-    max-height: 100px;
-    width: 100%;
-    margin: 0px;
+    max-width: 250px;
+    height: 400px;
+    border-radius: 30px;
     overflow: hidden;
-    .origin {
-      margin: 0;
-      padding: 0;
-      font-size: smaller;
-      color: $textColorGrey;
+    cursor: default;
+
+    ::selection {
+        background-color: transparent;
     }
-    .description {
-      margin: 0;
-      padding: 0;
+
+    .one {
+        position: absolute;
+        width: 600px;
+        height: 600px;
+        background: linear-gradient(to right,
+                rgb(255, 255, 255, 0.8),
+                rgb(255, 16, 240, 0.8));
+        bottom: 0;
+        right: 0;
+        border-radius: 50%;
+        transform: translate(100px);
+        filter: blur(50px);
+        animation: rotate 15s linear infinite;
     }
-  }
+
+    .two {
+        position: absolute;
+        width: 600px;
+        height: 600px;
+        background: linear-gradient(to right,
+                transparentize($purple, 0.2),
+                transparentize($orange, 0.2));
+        top: 0;
+        left: 0;
+        border-radius: 50%;
+        filter: blur(50px);
+        animation: rotate-2 10s infinite;
+    }
+
+    .content {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #000;
+        color: $white;
+        width: calc(100% - 10px);
+        max-width: 240px;
+        height: 390px;
+        margin: 5px 0 0 5px;
+        border-radius: 26px;
+        transition: 0.2s linear;
+
+        svg {
+            aspect-ratio: 1/1;
+            min-width: 75px;
+            max-width: 75px;
+            min-height: 75px;
+            max-height: 75px;
+            margin-top: 2rem;
+        }
+
+        h3 {
+            color: $orange;
+            font-size: 1.5rem;
+        }
+
+        p {
+            box-sizing: border-box;
+            padding: 0 5px;
+            margin-top: -15px;
+        }
+
+        &:hover {
+            background-color: rgb(0, 0, 0, 0.4);
+        }
+    }
 }
 
-#more {
-  margin: auto;
-  font-size: 14rem;
-  i {
-    width: 224px;
-    border: 4px solid $textColorWhite;
-    border-radius: 50%;
-    margin: 0;
-    padding: 0;
-  }
-  p {
-    font-size: 2rem;
-    margin: auto;
-  }
+@keyframes rotate {
+    100% {
+        transform: rotate(1turn);
+    }
+}
+
+@keyframes rotate-2 {
+    100% {
+        transform: rotate(-1turn);
+    }
+}
+
+/*.card {
+    width: 100%;
+    max-width: 250px;
+    height: 300px;
+    background-color: transparentize($purple, 0.7);
+    box-shadow: $orange 0px 20px 30px -10px;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border-radius: 2rem;
+    justify-self: center;
+    position: relative;
+    overflow: hidden;
+
+    .content {
+        width: 95%;
+        height: 95%;
+        background: $black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.25rem;
+        border-radius: 1rem;
+        box-sizing: border-box;
+        padding: 25px;
+    }
+
+    .animate {
+        position: absolute;
+        transform: scale(2);
+        z-index: -1;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+
+        &::before {
+            background: linear-gradient(-45deg, rgba(233, 121, 37, 1), rgba(87, 60, 185, 1), rgba(233, 121, 37, 1), rgba(87, 60, 185, 1));
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            z-index: -1;
+            aspect-ratio: 1;
+            animation: 3s linear spin infinite;
+        }
+    }
+
+    h3 {
+        text-align: center;
+        color: $orange;
+    }
+
+    svg {
+        aspect-ratio: 1/1;
+        display: block;
+        margin: auto;
+        padding-top: 1rem;
+        width: 50px;
+        height: 50px;
+        align-self: center;
+    }
+
+    .description {
+        font-size: 0.8rem;
+        box-sizing: border-box;
+        padding: 5px;
+        overflow: hidden;
+    }
+}*/
+
+@keyframes spin {
+    0% {
+        transform: translateY(-50%) rotate(0);
+    }
+
+    100% {
+        transform: translateY(-50%) rotate(1turn);
+    }
 }

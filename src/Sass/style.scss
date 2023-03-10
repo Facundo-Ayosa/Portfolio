@@ -1,41 +1,21 @@
 /* [ABSTRACTS] */
-@import './abstracts/variables';
+@import './utils/variables';
 
 /* [BASE] */
 @import './base/reset';
 @import './base/typography';
 
 /* [COMPONENTS] */
-
+@import './components/rainbow_anim';
+@import './components/card';
+@import './components/project_card';
 
 /* [LAYOUT] */
-@import './layout/sidebar';
+@import './layout/main';
+@import './layout/header';
 
 /* [PAGES] */
-
-
-/*@import './base/typography';
-@import './base/reset';
-
-
-@import './sass-utils/variables';
-
-@import './Components/badges';
-@import './components/content-box';
-
-@import './layout/navbar';
-
-
 @import './pages/home';
-
-@import './components/diagonal';
-@import './Components/card';
-
-@import './pages/projects';
-@import './pages/education';
-
-@import './layout/contactForm';
-
-@import './pages/contact';
-
-@import './layout/footer';*/
+@import './pages/about';
+@import './pages/skills';
+@import './pages/portfolio';

@@ -1,137 +1,122 @@
-#mainPage {
-  background-image: $backgroundGradient;
-}
+#home {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  max-height: 100vh;
 
-/* About Section */
-#about {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-
-  h1 {
-    font-family: 'Gidole-Regular';
-    color: $textColorWhite;
+  img {
+    display: none;
+    padding-bottom: 10rem;
   }
 
-  p {
-    color: $accentOrange;
-  }
-}
-
-@media (orientation: portrait) {
-  #about {
-    h1 {
-      font-size: 10vw;
-    }
-
-    p {
-      font-size: 6vw;
-    }
-  }
-
-  .contact-info {
-    flex-wrap: wrap;
-  }
-
-  .contact-card {
+  .title {
+    margin: 0;
+    grid-area: 2 / 1 / 4 / 3;
+    color: $orange;
+    align-self: center;
     font-size: 2rem;
-  }
+    font-size: clamp(2rem, -0.5714285714285716rem + 3.8095238095238098vw, 4rem);
 
-  #contact {
-    h1 {
-      font-size: 4rem;
-    }
-
-    p {
-      font-size: 3rem;
-    }
-  }
-}
-
-@media (orientation: landscape) {
-  #about {
-    h1 {
-      font-size: 6vw;
-    }
-
-    p {
-      font-size: 4vw;
+    .whiteText {
+      color: $white;
     }
   }
 
-  .contact-info {
-    flex-wrap: nowrap;
+  @media (max-width: 425px) {
 
-    div {
-      display: flex;
-      flex-direction: row;
-    }
-  }
 
-  #contact {
-    h1 {
-      font-size: 5vw;
-    }
+    .title {
+      grid-area: 2 / 1 / 4 / 5;
 
-    p {
-      font-size: 3vw;
-    }
-  }
-
-  .contact-card {
-    font-size: 2vw;
-  }
-}
-
-/* Contact */
-#contact {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  flex-direction: column;
-
-  h1 {
-    color: $accentPurple;
-  }
-
-  p {
-    color: $textColorWhite;
-  }
-
-  .contact-info {
-    width: 90%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-
-    .contact-card {
-      display: flex;
-      flex-direction: row;
-      text-decoration: none;
-      align-items: center;
-      padding: 15px;
-      margin: 0px 5px 0px 5px;
-      color: $textColorWhite;
-      border-radius: 15px;
-      transition: color 0.5s, background-color 0.5s, box-shadow 0.5s;
-
-      img {
-        margin-right: 5px;
-      }
-
-      &:hover {
-        color: $textColorBlack;
-        background-color: $accentOrange;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      >.rainbow_anim {
+        font-size: 1.8rem;
+        font-size: clamp(1.8rem, 1.4000000000000001rem + 1.9999999999999998vw, 2rem);
       }
     }
-  }
-}
 
-/* Projects Section */
-#projects {
-  align-items: center;
-  text-align: center;
+    .btns {
+      grid-area: 4 / 1 / 5 / 5;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+  }
+
+  @media (min-width: 426px) {
+    img {
+      display: block;
+      grid-area: 2 / 3 / 6 / 5;
+      aspect-ratio: 1.27/1;
+      max-width: 100%;
+      place-self: center;
+    }
+
+    .btns {
+      grid-area: 4 / 1 / 5 / 3;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+  }
+
+
+
+
+
+
+  button {
+    position: relative;
+    display: inline-block;
+
+    width: 6rem;
+    width: clamp(6rem, 4rem + 10vw, 7rem);
+    height: 3rem;
+    font-size: 0.7rem;
+    font-size: clamp(0.7rem, 0.4999999999999998rem + 1.0000000000000009vw, 0.8rem);
+
+    @media (min-width: 1920px) {
+      width: 10rem;
+      font-size: 1rem;
+    }
+
+    border: 2px solid $orange;
+    background-color: transparent;
+    color: $white;
+    overflow: hidden;
+    z-index: 1;
+    scale: 1;
+    transition: scale 50ms ease-in;
+    cursor: pointer;
+
+    &::before {
+      position: absolute;
+      top: -5%;
+      left: -5%;
+      right: auto;
+      bottom: auto;
+      left: 0;
+      z-index: -1;
+      content: '';
+      background-color: $orange;
+      transition: transform .3s;
+      width: 110%;
+      height: 180%;
+      transform-origin: left bottom;
+      transform: skewY(-10deg) scale(1, 0);
+    }
+
+    &:hover::before {
+      transform-origin: left top;
+      transform: skewY(-10deg) scale(1, 1);
+    }
+
+    &:active {
+      scale: 0.9;
+      transition: scale 50ms ease-out;
+    }
+  }
 }

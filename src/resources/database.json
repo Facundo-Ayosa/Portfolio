@@ -3,13 +3,8 @@
         {
             "id": 0,
             "title": "Balance Sheet",
-            "origin": "Part of the Web Development Course.",
-            "description": "Focused on Semantic HTML & Table management, with little CSS.",
             "longDescription": "Project made following the FreeCodeCamp Web Development Course, using mostly HTML tables, Semantic HTML and a little CSS. It was required for the Web Development Certificate.",
-            "badges": [
-                "HTML",
-                "CSS"
-            ],
+            "stage": "Done",
             "date": "27th of June 2022",
             "href": ""
         },

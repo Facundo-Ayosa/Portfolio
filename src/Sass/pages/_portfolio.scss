@@ -1,0 +1,21 @@
+#portfolio {
+
+    h2 {
+        font-family: $Font;
+        color: $white;
+    }
+
+    .container {
+        /* Testing */
+        display: block;
+        box-sizing: border-box;
+        width: 100%;
+        border-radius: 2rem;
+
+        /* -V- */
+
+        display: flex;
+        flex-direction: row;
+        
+    }
+}

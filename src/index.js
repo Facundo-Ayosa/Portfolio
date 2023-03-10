@@ -1,24 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './Sass/style.css';
-import Home from './Page/home';/*
-import Portfolio from './Page/portfolio';
-import Education from './Page/education';
-import AboutMe from './Page/aboutme';*/
-import SideBar from './Layout/SideBar';
-import Footer from './Layout/Footer';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from './Page/Home';
+import Header from './Layout/Header';
+import Main from './Main';
+import About from './Page/About';
+import Skills from './Page/Skills';
+import Portfolio from './Page/Portfolio';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Router>
-      <SideBar />
-      <Routes>
-        <Route path="/portfolio" element={<Home />} />
-      </Routes>
-      <Footer />
-    </Router>
+    <Header />
+    <Main>
+      <Home />
+      <About />
+      <Skills />
+      <Portfolio />
+    </Main>
   </React.StrictMode>
 );
 //<Route path="/blog" element={<Blog/>}/>
