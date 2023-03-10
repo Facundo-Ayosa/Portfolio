@@ -155,77 +155,6 @@ body {
     transform: rotate(-1turn);
   }
 }
-/*.card {
-    width: 100%;
-    max-width: 250px;
-    height: 300px;
-    background-color: transparentize($purple, 0.7);
-    box-shadow: $orange 0px 20px 30px -10px;
-    backdrop-filter: blur(6px);
-    -webkit-backdrop-filter: blur(6px);
-    border-radius: 2rem;
-    justify-self: center;
-    position: relative;
-    overflow: hidden;
-
-    .content {
-        width: 95%;
-        height: 95%;
-        background: $black;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 1.25rem;
-        border-radius: 1rem;
-        box-sizing: border-box;
-        padding: 25px;
-    }
-
-    .animate {
-        position: absolute;
-        transform: scale(2);
-        z-index: -1;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-
-        &::before {
-            background: linear-gradient(-45deg, rgba(233, 121, 37, 1), rgba(87, 60, 185, 1), rgba(233, 121, 37, 1), rgba(87, 60, 185, 1));
-            content: "";
-            position: absolute;
-            top: 50%;
-            left: 0;
-            bottom: 0;
-            right: 0;
-            z-index: -1;
-            aspect-ratio: 1;
-            animation: 3s linear spin infinite;
-        }
-    }
-
-    h3 {
-        text-align: center;
-        color: $orange;
-    }
-
-    svg {
-        aspect-ratio: 1/1;
-        display: block;
-        margin: auto;
-        padding-top: 1rem;
-        width: 50px;
-        height: 50px;
-        align-self: center;
-    }
-
-    .description {
-        font-size: 0.8rem;
-        box-sizing: border-box;
-        padding: 5px;
-        overflow: hidden;
-    }
-}*/
 @keyframes spin {
   0% {
     transform: translateY(-50%) rotate(0);
@@ -237,18 +166,26 @@ body {
 .project-card {
   margin: 2rem 1rem 2rem 1rem;
   border: none;
-  border-radius: 0px;
   box-shadow: rgba(233, 121, 37, 0.7) 0px 19px 38px, rgba(233, 121, 37, 0.78) 0px 15px 12px;
+  border-radius: 0px;
   max-width: 320px;
   background-color: #ffffff;
+  scroll-snap-align: center;
+}
+.project-card .card-body {
+  padding: 0.5rem;
 }
 .project-card img {
   display: block;
   width: 320px;
-  height: 13rem;
-  aspect-ratio: 320/208;
-  max-height: 13rem;
+  max-width: 320px;
+  height: 240px;
+  max-height: 240px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  animation: pan 60s ease-in infinite;
   background-color: white;
+  image-rendering: crisp-edges;
 }
 .project-card .title {
   font-family: "Share Tech Mono", monospace;
@@ -256,12 +193,26 @@ body {
   text-transform: uppercase;
   margin: 0;
   color: #161616;
+  min-height: 62px;
+  max-height: 62px;
+}
+.project-card .text {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  color: #161616;
+  min-height: calc(90px - 0.5rem);
+  max-height: calc(90px - 0.5rem);
+  margin: 0.5rem 0 0 0;
 }
 .project-card .stage {
-  color: white;
+  color: #ffffff;
   text-transform: uppercase;
   padding: 6px;
   font-family: "Share Tech Mono", monospace;
+  margin: 1rem 0;
+  display: block;
+  float: left;
+  width: auto;
 }
 .project-card .stage svg {
   height: 20px;
@@ -279,20 +230,41 @@ body {
 .project-card .stage.planning {
   background-color: lightskyblue;
 }
-.project-card .text {
-  font-family: "Roboto", sans-serif;
-  font-size: 1rem;
-  color: #161616;
-}
 .project-card .link {
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   font-size: 0.8rem;
-  color: #ffffff;
+  color: #161616;
   text-decoration: underline;
   transition: 0.3s;
+  display: block;
+  margin: 1rem;
+  float: right;
+  padding: 6px;
 }
 
+@keyframes pan {
+  0% {
+    -o-object-position: 0% 0%;
+       object-position: 0% 0%;
+  }
+  20% {
+    -o-object-position: 0% 0%;
+       object-position: 0% 0%;
+  }
+  40% {
+    -o-object-position: 0% 100%;
+       object-position: 0% 100%;
+  }
+  60% {
+    -o-object-position: 0% 100%;
+       object-position: 0% 100%;
+  }
+  100% {
+    -o-object-position: 0% 0%;
+       object-position: 0% 0%;
+  }
+}
 /* [LAYOUT] */
 main {
   box-sizing: border-box;
@@ -409,6 +381,7 @@ header .socials a:active {
 #home img {
   display: none;
   padding-bottom: 10rem;
+  aspect-ratio: 540/425;
 }
 #home .title {
   margin: 0;
@@ -660,17 +633,67 @@ header .socials a:active {
   }
 }
 
+#portfolio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 #portfolio h2 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Share Tech Mono", monospace;
   color: #ffffff;
 }
 #portfolio .container {
-  /* Testing */
-  display: block;
-  box-sizing: border-box;
-  width: 100%;
-  border-radius: 2rem;
-  /* -V- */
   display: flex;
   flex-direction: row;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  overflow: scroll visible;
+  box-sizing: border-box;
+  padding: 0.5rem 2rem 2rem;
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#contact h2 {
+  color: #ffffff;
+  font-family: "Share Tech Mono", monospace;
+}
+#contact .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#contact .container img {
+  height: 100%;
+  width: 50%;
+}
+#contact .container .form {
+  display: flex;
+  flex-direction: column;
+}
+#contact .container .form h3 {
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.7rem;
+}
+#contact .container .form .apps {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+#contact .container .form .apps svg {
+  height: 64px;
+  width: 64px;
+  color: #ffffff;
+  scale: 1;
+  transition: scale 50ms linear;
+}
+#contact .container .form .apps svg:hover {
+  scale: 1.1;
+  transition: scale 150ms linear;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,54 @@
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h2 {
+        color: $white;
+        font-family: $fontTitle;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            height: 100%;
+            width: 50%;
+
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+
+            h3 {
+                color: $white;
+                font-family: $Font;
+                font-size: 1.7rem
+            }
+
+            .apps {
+                display: flex;
+                flex-direction: row;
+                gap: 1rem;
+
+                svg {
+                    height: 64px;
+                    width: 64px;
+                    color: $white;
+                    scale: 1;
+                    transition: scale 50ms linear;
+
+                    &:hover {
+                        scale: 1.1;
+                        transition: scale 150ms linear;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -7,6 +7,8 @@ import Main from './Main';
 import About from './Page/About';
 import Skills from './Page/Skills';
 import Portfolio from './Page/Portfolio';
+import Contact from './Page/Contact';
+import Footer from './Layout/Footer';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -17,7 +19,9 @@ root.render(
       <About />
       <Skills />
       <Portfolio />
+      <Contact />
     </Main>
+    <Footer />
   </React.StrictMode>
 );
 //<Route path="/blog" element={<Blog/>}/>

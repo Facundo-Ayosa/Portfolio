@@ -1,6 +1,29 @@
 {
     "projects": [
         {
+            "title": "Claymore University Management App",
+            "img": "ClaymoreManagementApp",
+            "description": "Developed in React using React-Router-Dom, React-Redux, React-Hook-Form, React-Icons, Testing with React-Testing-Library and Sass.",
+            "stage": "working",
+            "href": "https://github.com/ayosafacundo/management-app"
+        },
+        {
+            "title": "Pokedex",
+            "img": "Pokedex",
+            "description": "Developed in React using custom hooks, Sass Pre-processor, and custom fetching to AnimeChan Restful API.",
+            "stage": "completed",
+            "href": "https://ayosafacundo.github.io/pokemon/"
+        },
+        {
+            "title": "Anime Quote Machine",
+            "img": "QuoteMachine",
+            "description": "Developed in React using and custom fetching to AnimeChan Restful API.",
+            "stage": "completed",
+            "href": "https://ayosafacundo.github.io/RandomQuoteMachine/"
+        }
+    ],
+    "projects_deprecated": [
+        {
             "id": 0,
             "title": "Balance Sheet",
             "longDescription": "Project made following the FreeCodeCamp Web Development Course, using mostly HTML tables, Semantic HTML and a little CSS. It was required for the Web Development Certificate.",

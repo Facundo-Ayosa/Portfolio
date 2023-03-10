@@ -1,21 +1,21 @@
 #portfolio {
 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
     h2 {
-        font-family: $Font;
+        font-family: $fontTitle;
         color: $white;
     }
 
     .container {
-        /* Testing */
-        display: block;
-        box-sizing: border-box;
-        width: 100%;
-        border-radius: 2rem;
-
-        /* -V- */
-
         display: flex;
         flex-direction: row;
-        
+        scroll-behavior: smooth;
+        scroll-snap-type: x mandatory;
+        overflow: scroll visible;
+        box-sizing: border-box;
+        padding: 0.5rem 2rem 2rem;
     }
 }

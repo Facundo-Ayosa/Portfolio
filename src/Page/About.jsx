@@ -1,5 +1,5 @@
 import React from 'react';
-import Portrait from '../resources/images/Portrait.jpg';
+import Portrait from '../resources/images/Portrait.webp';
 
 function About() {
 
