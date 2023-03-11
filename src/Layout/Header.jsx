@@ -23,8 +23,8 @@ function Header() {
                     onClick={() => setNavActive("Contact")}>Contact Me</a>
             </nav>
             <div className='socials'>
-                <a href='https://www.linkedin.com/in/ayosafacundo/'><BsLinkedin />Linkedin</a>
-                <a href='https://github.com/ayosafacundo'><BsGithub />Github</a>
+                <a href='https://www.linkedin.com/in/ayosafacundo/' target="_blank" rel='noreferrer'><BsLinkedin />Linkedin</a>
+                <a href='https://github.com/ayosafacundo' target="_blank" rel='noreferrer'><BsGithub />Github</a>
             </div>
         </header>
     )

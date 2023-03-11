@@ -31,14 +31,6 @@ header {
         }
     }
 
-    .logo {
-        color: $white;
-        font-size: 2rem;
-        font-size: clamp(2rem, 0.7142857142857142rem + 1.9047619047619049vw, 3rem);
-        text-align: center;
-        font-family: $fontTitle;
-    }
-
 
     nav {
         display: none;

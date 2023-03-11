@@ -9,14 +9,16 @@
 @import './components/rainbow_anim';
 @import './components/card';
 @import './components/project_card';
+@import './components/logo';
 
 /* [LAYOUT] */
 @import './layout/main';
 @import './layout/header';
+@import './layout/footer';
 
 /* [PAGES] */
 @import './pages/home';
 @import './pages/about';
 @import './pages/skills';
 @import './pages/portfolio';
-@import './pages/contact'
+@import './pages/contact';

@@ -1,5 +1,5 @@
 import { BsWrenchAdjustableCircle } from 'react-icons/bs';
-import { GrStatusGood } from 'react-icons/gr';
+import { IoCheckmarkDoneCircleSharp } from 'react-icons/io5';
 import ProjectCard from '../ProjectCard';
 import data from '../../resources/database.json';
 import React from 'react';
@@ -9,7 +9,7 @@ import ClaymoreManagementApp from '../../resources/images/ClaymoreManagementApp.
 
 const icons = {
     working: <BsWrenchAdjustableCircle />,
-    completed: <GrStatusGood />
+    completed: <IoCheckmarkDoneCircleSharp />
 }
 
 const images = {

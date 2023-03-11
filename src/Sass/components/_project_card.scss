@@ -59,6 +59,7 @@
             margin-right: 6px;
             display: inline-block;
             vertical-align: text-bottom;
+            shape-rendering: geometricPrecision;
         }
 
         &.completed {
