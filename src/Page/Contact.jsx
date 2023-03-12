@@ -12,6 +12,7 @@ function Contact() {
         emailjs.sendForm('service_nil5un9', 'toProffessionalEmail', form.current, 'udAvyhHErC2FhjGg4')
             .then((result) => {
                 console.log(result.text);
+
             }, (error) => {
                 console.log(error.text);
             });
@@ -50,7 +51,10 @@ function Contact() {
                             <label htmlFor="message">Details</label>
                             <textarea className='input' type="textarea" name="message" id="details" />
                         </div>
-                        <button type="submit" value="Send">Submit</button>
+                        <div className="submit">
+                            <button type="submit" value="Send" onClick={sendEmail}>Submit</button>
+                            <span className='onSuccess'></span>
+                        </div>
                     </form>
                 </div>
             </div>
