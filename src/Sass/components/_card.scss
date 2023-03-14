@@ -2,7 +2,7 @@
     position: relative;
     width: 100%;
     max-width: 250px;
-    height: 400px;
+    height: 335px;
     border-radius: 30px;
     overflow: hidden;
     cursor: default;
@@ -49,7 +49,7 @@
         color: $white;
         width: calc(100% - 10px);
         max-width: 240px;
-        height: 390px;
+        height: 325px;
         margin: 5px 0 0 5px;
         border-radius: 26px;
         transition: 0.2s linear;
@@ -70,8 +70,9 @@
 
         p {
             box-sizing: border-box;
-            padding: 0 5px;
+            padding: 0 15px;
             margin-top: -15px;
+            text-align: justify;
         }
 
         &:hover {

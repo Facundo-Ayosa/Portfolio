@@ -1,24 +1,28 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import contactme from '../resources/images/Contact-me.svg';
+import { SlInfo } from 'react-icons/sl';
 import { SiWhatsapp, SiTelegram, SiTwitter, SiDiscord, SiLinkedin } from 'react-icons/si';
 
 function Contact() {
     const form = useRef();
+    const [emailStatus, setEmailStatus] = useState("Waiting");
 
     const sendEmail = (e) => {
         e.preventDefault();
-
-        emailjs.sendForm('service_nil5un9', 'toProffessionalEmail', form.current, 'udAvyhHErC2FhjGg4')
-            .then((result) => {
-                console.log(result.text);
-
-            }, (error) => {
-                console.log(error.text);
-            });
+        let formFilled = false;
+        if (form.current[0].value !== "" && form.current[1].value !== "" && form.current[2].value !== "") {
+            formFilled = true
+        }
+        if (formFilled) {
+            emailjs.sendForm('service_nil5un9', 'toProffessionalEmail', form.current, 'udAvyhHErC2FhjGg4')
+                .then((result) => {
+                    setEmailStatus("Sent");
+                }, (error) => {
+                    setEmailStatus("Error");
+                });
+        }
     };
-
-
 
     return (
         <section id="contact">
@@ -52,8 +56,8 @@ function Contact() {
                             <textarea className='input' type="textarea" name="message" id="details" />
                         </div>
                         <div className="submit">
-                            <button type="submit" value="Send" onClick={sendEmail}>Submit</button>
-                            <span className='onSuccess'></span>
+                            {emailStatus === "Error" && <span><SlInfo /> There was an unexpected error, please try again</span>}
+                            <button type="submit" value="Send" onClick={sendEmail} className={emailStatus === "Sent" ? "sent" : emailStatus === "Error" ? "error" : undefined}>Submit</button>
                         </div>
                     </form>
                 </div>
