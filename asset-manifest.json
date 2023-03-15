@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.61c18114.css",
-    "main.js": "/portfolio/static/js/main.e5edc3b3.js",
+    "main.css": "/portfolio/static/css/main.13b8d99d.css",
+    "main.js": "/portfolio/static/js/main.1281adb5.js",
     "static/media/Pokedex.webp": "/portfolio/static/media/Pokedex.50e89319ddff8c2ff9e6.webp",
     "static/media/Contact-me.svg": "/portfolio/static/media/Contact-me.6af0dc0e0383392e6ed7888c2a5b8052.svg",
     "static/media/ClaymoreManagementApp.webp": "/portfolio/static/media/ClaymoreManagementApp.58331ebe433fb13b1840.webp",
@@ -9,11 +9,11 @@
     "static/media/QuoteMachine.webp": "/portfolio/static/media/QuoteMachine.b33548ce1fb16d72658a.webp",
     "static/media/Software-Developer.svg": "/portfolio/static/media/Software-Developer.2bb45aff7cd7cd59196fbd5bd2a97139.svg",
     "index.html": "/portfolio/index.html",
-    "main.61c18114.css.map": "/portfolio/static/css/main.61c18114.css.map",
-    "main.e5edc3b3.js.map": "/portfolio/static/js/main.e5edc3b3.js.map"
+    "main.13b8d99d.css.map": "/portfolio/static/css/main.13b8d99d.css.map",
+    "main.1281adb5.js.map": "/portfolio/static/js/main.1281adb5.js.map"
   },
   "entrypoints": [
-    "static/css/main.61c18114.css",
-    "static/js/main.e5edc3b3.js"
+    "static/css/main.13b8d99d.css",
+    "static/js/main.1281adb5.js"
   ]
 }
