@@ -1,4 +1,4 @@
-import { SiReact, SiJavascript, SiHtml5, SiCss3, SiSass, SiRedux, SiFigma, SiGithub } from 'react-icons/si';
+import { SiReact, SiJavascript, SiHtml5, SiCss3, SiSass, SiRedux, SiFigma, SiGithub, SiNodedotjs, SiExpress, SiMongodb, SiPostgresql } from 'react-icons/si';
 import SkillCard from '../SkillCard';
 import skills from '../../resources/skills.json';
 import React from 'react';
@@ -12,7 +12,11 @@ const icons = {
     SiSass: <SiSass />,
     SiRedux: <SiRedux />,
     SiFigma: <SiFigma />,
-    SiGithub: <SiGithub />
+    SiGithub: <SiGithub />,
+    SiNodedotjs: <SiNodedotjs />,
+    SiExpress: <SiExpress />,
+    SiMongodb: <SiMongodb />,
+    SiPostgresql: <SiPostgresql />
 }
 
 
@@ -21,7 +25,7 @@ const icons = {
  * @param {int} amount 
  * @returns {[React.Component]}
  */
-const getSkills = (amount = 8) => {
+const getSkills = (amount = 12) => {
 
     const skillcards = []
     for (let i = 0; i < amount; i++) {

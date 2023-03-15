@@ -140,6 +140,8 @@ body {
   padding: 0 15px;
   margin-top: -15px;
   text-align: justify;
+  font-size: 0.8rem;
+  font-size: clamp(0.8rem, 0.5714285714rem + 0.3571428571vw, 1rem);
 }
 .card .content:hover {
   background-color: rgba(0, 0, 0, 0.4);
@@ -223,13 +225,13 @@ body {
   shape-rendering: geometricPrecision;
 }
 .project-card .stage.completed {
-  background-color: green;
+  background-color: #006200;
 }
 .project-card .stage.working {
-  background-color: red;
+  background-color: #ad0000;
 }
 .project-card .stage.planning {
-  background-color: lightskyblue;
+  background-color: #0984d1;
 }
 .project-card .link {
   font-family: "Roboto", sans-serif;
@@ -307,7 +309,7 @@ header a {
   padding: 0.5rem;
 }
 header a.active {
-  color: #321266;
+  color: #F3964F;
 }
 header nav {
   display: none;
@@ -397,7 +399,7 @@ footer {
 }
 footer .logo {
   grid-area: 1/1/2/3;
-  color: #F3964F;
+  color: #321266;
 }
 footer .nav {
   grid-area: 2/1/3/2;
@@ -660,6 +662,7 @@ footer .info ul li .socials a:active {
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   gap: 2rem;
+  place-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
   width: 100%;

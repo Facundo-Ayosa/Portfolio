@@ -63,15 +63,15 @@
         }
 
         &.completed {
-            background-color: green;
+            background-color: $green;
         }
 
         &.working {
-            background-color: red;
+            background-color: $red;
         }
 
         &.planning {
-            background-color: lightskyblue;
+            background-color: $lightblue;
         }
     }
 

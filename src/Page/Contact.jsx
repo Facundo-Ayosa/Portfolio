@@ -32,11 +32,11 @@ function Contact() {
                 <div className='form'>
                     <h3>You can contact me in any of these apps:</h3>
                     <div className="apps">
-                        <a href="https://wa.me/qr/46XAB7FLGH2VM1" target="_blank" rel='noreferrer'><SiWhatsapp /></a>
-                        <a href="https://t.me/AyosaFacundo" target="_blank" rel='noreferrer'><SiTelegram /></a>
-                        <a href="https://twitter.com/FacundoAyosa" target="_blank" rel='noreferrer'><SiTwitter /></a>
-                        <a href="https://discord.com/users/296442278854262784" target="_blank" rel='noreferrer'><SiDiscord /></a>
-                        <a href="https://www.linkedin.com/in/ayosafacundo/" target="_blank" rel='noreferrer'><SiLinkedin /></a>
+                        <a aria-label="Link to my Whatsapp" href="https://wa.me/qr/46XAB7FLGH2VM1" target="_blank" rel='noreferrer'><SiWhatsapp /></a>
+                        <a aria-label="Link to my Telegram" href="https://t.me/AyosaFacundo" target="_blank" rel='noreferrer'><SiTelegram /></a>
+                        <a aria-label="Link to my Twitter" href="https://twitter.com/FacundoAyosa" target="_blank" rel='noreferrer'><SiTwitter /></a>
+                        <a aria-label="Link to my Discord" href="https://discord.com/users/296442278854262784" target="_blank" rel='noreferrer'><SiDiscord /></a>
+                        <a aria-label="Link to my LinkedIn" href="https://www.linkedin.com/in/ayosafacundo/" target="_blank" rel='noreferrer'><SiLinkedin /></a>
                     </div>
                     <h3>Or leave here your details and I will contact you.</h3>
                     <form ref={form} onSubmit={sendEmail}>
@@ -52,8 +52,8 @@ function Contact() {
                         </div>
                         { /* Details / text */}
                         <div className="details">
-                            <label htmlFor="message">Details</label>
-                            <textarea className='input' type="textarea" name="message" id="details" />
+                            <label htmlFor="message">Message</label>
+                            <textarea className='input' type="textarea" name="message" id="message" />
                         </div>
                         <div className="submit">
                             {emailStatus === "Error" && <span><SlInfo /> There was an unexpected error, please try again</span>}
