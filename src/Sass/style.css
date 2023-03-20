@@ -536,14 +536,21 @@ footer .info ul li .socials a:active {
     justify-content: space-evenly;
   }
 }
-#home button {
+#home .button {
   position: relative;
   display: inline-block;
+  text-decoration: none;
+  box-sizing: border-box;
+  text-align: center;
+  align-items: center;
   width: 6rem;
   width: clamp(6rem, 4rem + 10vw, 7rem);
   height: 3rem;
   font-size: 0.7rem;
   font-size: clamp(0.7rem, 0.5rem + 1vw, 0.8rem);
+  line-height: 2.8rem;
+  font-family: "Share Tech Mono", monospace;
+  font-weight: 500;
   border: 2px solid #F3964F;
   background-color: transparent;
   color: #ffffff;
@@ -554,12 +561,12 @@ footer .info ul li .socials a:active {
   cursor: pointer;
 }
 @media (min-width: 1920px) {
-  #home button {
+  #home .button {
     width: 10rem;
     font-size: 1rem;
   }
 }
-#home button::before {
+#home .button::before {
   position: absolute;
   top: -5%;
   left: -5%;
@@ -575,11 +582,11 @@ footer .info ul li .socials a:active {
   transform-origin: left bottom;
   transform: skewY(-10deg) scale(1, 0);
 }
-#home button:hover::before {
+#home .button:hover::before {
   transform-origin: left top;
   transform: skewY(-10deg) scale(1, 1);
 }
-#home button:active {
+#home .button:active {
   scale: 0.9;
   transition: scale 50ms ease-out;
 }
