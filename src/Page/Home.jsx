@@ -2,9 +2,6 @@ import React from 'react';
 import WebDev from '../resources/images/Software-Developer.svg';
 
 function Home() {
-    const handleClick = () => {
-
-    }
     return (
         <section id="home">
             <img src={WebDev} alt="Web Developer Illustration" />
