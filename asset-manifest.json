@@ -1,19 +1,21 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.645ffddc.css",
-    "main.js": "/portfolio/static/js/main.5623c6ed.js",
-    "static/media/Pokedex.webp": "/portfolio/static/media/Pokedex.50e89319ddff8c2ff9e6.webp",
+    "main.js": "/portfolio/static/js/main.e3dc9a9b.js",
+    "static/media/Pokedex.webp": "/portfolio/static/media/Pokedex.6f1b9fc20e2d443bcb59.webp",
     "static/media/Contact-me.svg": "/portfolio/static/media/Contact-me.6af0dc0e0383392e6ed7888c2a5b8052.svg",
-    "static/media/ClaymoreManagementApp.webp": "/portfolio/static/media/ClaymoreManagementApp.58331ebe433fb13b1840.webp",
     "static/media/Portrait.webp": "/portfolio/static/media/Portrait.c72f684f686aeaa0704d.webp",
-    "static/media/QuoteMachine.webp": "/portfolio/static/media/QuoteMachine.b33548ce1fb16d72658a.webp",
     "static/media/Software-Developer.svg": "/portfolio/static/media/Software-Developer.2bb45aff7cd7cd59196fbd5bd2a97139.svg",
+    "static/media/ClaymoreManagementApp.webp": "/portfolio/static/media/ClaymoreManagementApp.a20789f296cf4dd957db.webp",
+    "static/media/QuoteMachine.webp": "/portfolio/static/media/QuoteMachine.eeb1698c908ce58f18f9.webp",
+    "static/media/HeaderParserMicroservice.webp": "/portfolio/static/media/HeaderParserMicroservice.64dc37e3f2747634e507.webp",
+    "static/media/URLShortenerMicroservice.webp": "/portfolio/static/media/URLShortenerMicroservice.2f4864b69eff311bff06.webp",
     "index.html": "/portfolio/index.html",
     "main.645ffddc.css.map": "/portfolio/static/css/main.645ffddc.css.map",
-    "main.5623c6ed.js.map": "/portfolio/static/js/main.5623c6ed.js.map"
+    "main.e3dc9a9b.js.map": "/portfolio/static/js/main.e3dc9a9b.js.map"
   },
   "entrypoints": [
     "static/css/main.645ffddc.css",
-    "static/js/main.5623c6ed.js"
+    "static/js/main.e3dc9a9b.js"
   ]
 }
