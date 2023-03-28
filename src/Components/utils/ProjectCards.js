@@ -6,6 +6,8 @@ import React from 'react';
 import Pokedex from '../../resources/images/Pokedex.webp';
 import QuoteMachine from '../../resources/images/QuoteMachine.webp';
 import ClaymoreManagementApp from '../../resources/images/ClaymoreManagementApp.webp';
+import HeaderParserMicroservice from '../../resources/images/HeaderParserMicroservice.webp';
+import URLShortenerMicroservice from '../../resources/images/URLShortenerMicroservice.webp';
 
 const icons = {
     working: <BsWrenchAdjustableCircle />,
@@ -15,7 +17,9 @@ const icons = {
 const images = {
     Pokedex: Pokedex,
     QuoteMachine: QuoteMachine,
-    ClaymoreManagementApp: ClaymoreManagementApp
+    ClaymoreManagementApp: ClaymoreManagementApp,
+    HeaderParserMicroservice: HeaderParserMicroservice,
+    URLShortenerMicroservice: URLShortenerMicroservice
 }
 
 /**

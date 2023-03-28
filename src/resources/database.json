@@ -8,6 +8,20 @@
             "href": "https://github.com/ayosafacundo/management-app"
         },
         {
+            "title": "Header Parser Microservice",
+            "img": "HeaderParserMicroservice",
+            "description": "Programmed in NodeJS and using Express.js. Developed the product according to the specifications requested in the Backend Certificate FreeCodeCamp course.",
+            "stage": "completed",
+            "href": "https://github.com/ayosafacundo/HeaderParser-microservice"
+        },
+        {
+            "title": "URL Shortener Microservice",
+            "img": "URLShortenerMicroservice",
+            "description": "Programmed in NodeJS and using Express.js. Developed the product according to the specifications requested in the Backend Certificate FreeCodeCamp course.",
+            "stage": "completed",
+            "href": "https://github.com/ayosafacundo/URL-Shortener-microservice"
+        },
+        {
             "title": "Pokedex",
             "img": "Pokedex",
             "description": "Developed in React using custom hooks, Sass Pre-processor, and custom fetching to AnimeChan Restful API.",
@@ -20,88 +34,6 @@
             "description": "Developed in React using and custom fetching to AnimeChan Restful API.",
             "stage": "completed",
             "href": "https://ayosafacundo.github.io/RandomQuoteMachine/"
-        }
-    ],
-    "projects_deprecated": [
-        {
-            "id": 0,
-            "title": "Balance Sheet",
-            "longDescription": "Project made following the FreeCodeCamp Web Development Course, using mostly HTML tables, Semantic HTML and a little CSS. It was required for the Web Development Certificate.",
-            "stage": "Done",
-            "date": "27th of June 2022",
-            "href": ""
-        },
-        {
-            "id": 1,
-            "title": "JS Documentation",
-            "origin": "Part of the Web Development Course.",
-            "description": "Focused on Semantic HTML & CSS Optimization.",
-            "longDescription": "Project made following the FreeCodeCamp Web Development Course, using Semantic HTML and focused on CSS Optimization, started using the D.R.Y. (Don't Repeat Yourself) principle in CSS.",
-            "badges": [
-                "HTML",
-                "CSS"
-            ],
-            "date": "2nd of July 2022",
-            "href": ""
-        },
-        {
-            "id": 2,
-            "title": "Product Landing Page",
-            "origin": "Part of the Web Development Course.",
-            "description": "Focused on Responsiveness & Semantic HTML.",
-            "longDescription": "Project made following the FreeCodeCamp Web Development Course, focused on Semantic HTML, and following the FreeCodeCamp's design guide for their courses. The main concern of this html design was to follow some design rules that was already set.",
-            "badges": [
-                "HTML",
-                "CSS"
-            ],
-            "date": "4th of July 2022",
-            "href": ""
-        },
-        {
-            "id": 3,
-            "title": "Pokedex",
-            "origin": "Auto-imposed Challenge to test my skills.",
-            "description": "React App made as a first peek into React.js, using PokeApi v2 Restful API.",
-            "longDescription": "My main objective with this project was to learn React using the docs and searching for answers in StackOverflow as the FreeCodeCamp Course I used to learn the basics of React didn't help much. It used deprecated functions and structure, like JS Classes for each JSX module instead of functions, lifecycle methods that are now unsafe, and so on, so I challenged myself to learn React all by myself, without any course nor explicit guide, forcing myself to adapt my reasoning for the new framework. To spice it up, I tried to learn how a Restful Api calls works, and making use of the DRY (Don't Repeat Yourself) principle. The hardest problem was to learn Promises and Async programming, as I needed it for making request to the API.",
-            "badges": [
-                "HTML",
-                "CSS",
-                "JavaScript",
-                "React"
-            ],
-            "date": "4th of August 2022",
-            "href": "pokedex-example/"
-        },
-        {
-            "id": 4,
-            "title": "Random Anime Quote Machine",
-            "origin": "Part of the Front End Libraries Course.",
-            "description": "React App made as a project to crystalize my bases on React.js, using AnimeChan Restful API.",
-            "longDescription": "My main objective with this project was to make a single page webapp that took a random quote from an Anime Restful API and showed it on the screen, I developed the webapp mobile-first, and used the D.R.Y. (Don't Repeat Yourself) and KISS (Keep It Simple, Stupid) principle. The hardest problem i had to overcome was that the Api had long quotes that didn't fit inside the card, what I ended up doing was filtering the request so that if the quote had more than 150 characters, it'd ask for a new one.",
-            "badges": [
-                "HTML",
-                "CSS",
-                "JavaScript",
-                "React"
-            ],
-            "date": "8th of August 2022",
-            "href": "RandomQuoteMachine/"
-        }
-    ],
-    "unused": [
-        {
-            "id": 5,
-            "title": "Markdown Previewer",
-            "origin": "Part of the Front End Libraries Course.",
-            "description": "React App made as a project to crystalize my bases on React.js using Markdown-it Library.",
-            "longDescription": "",
-            "badges": [
-                "CSS",
-                "HTML",
-                "JavaScript",
-                "React"
-            ],
-            "date": "18th of August 2022"
         }
     ],
     "certificates": [
